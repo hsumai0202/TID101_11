@@ -810,7 +810,7 @@ input[type="radio"]{
     margin-bottom: 20px;
 }
 
-/* ---------------- 常見問題內容區塊 ------------------ */
+/* ---------------- 最新消息內容區塊 ------------------ */
 
 .news{
     width: 100%;
@@ -888,7 +888,7 @@ input[type="radio"]{
 }
 
 
-/* ---------------- 常見問題內容區塊 ------------------ */
+/* ---------------- 所有餐點內容區塊 ------------------ */
 
 .meals_main{
     width: 100%;
@@ -976,6 +976,24 @@ input[type="radio"]{
     border-radius: 5px;
     position: relative;
     left: 140px;
+}
+
+#divchpic01{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-image: url(../img/商品圖/暗夜神秘堡2.png);
+    background-repeat: no-repeat;
+    background-size: 250px;
+    padding-bottom: 15px;
+}
+
+#divchpic01:hover {
+    display: block;
+    background-image: url(../img/商品圖/暗夜神秘堡.png);
+    
+    transition: .5s;
+    transform:scale(1.2,1.2);
 }
 /* ---------------- 數量鍵 ------------------ */
 
@@ -1211,6 +1229,7 @@ input[type="radio"]{
 
 .burger_main_top a:hover{
     background: #F05E1C;
+    border: 0;
     color: #fff;
 }
 /* 分隔線 */
@@ -1222,6 +1241,7 @@ hr {
     /* background: #333; */
     background-image: linear-gradient(to right, #ef834500, #EC5F1F, #EF834500);
 }
+
 /* ---------------- 產品介紹區塊 ------------------ */
 .burger_main_int2 {
     /* outline:  2px solid rgb(75, 46, 139); */

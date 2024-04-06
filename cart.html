@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 載入CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/cart_style.css">
     <!-- 載入font icon -->
     <script src="https://kit.fontawesome.com/1h177a75cd75.js" crossorigin="anonymous"></script>
     <!-- 載入google font -->
@@ -48,32 +49,118 @@
                 </ul>
             </div>
         </div>
-        <!-- 三大承諾內容區塊  -->
-        <div class="problem_main">
-            <h1>常見問題</h1>
-            <div class="problem_main_qa">
-                <h3>Q.要如何保存，保存期間多久？</h3>
-                <p>透過急速冷凍讓產品瞬間鎖鮮，所以在無化學添加物及防腐劑的情況下，可以冷凍 ( -18 ℃ ) 保存一年，保存期限印製在產品外包裝上，讓您每次取用時可清楚看到。</p>
+        <!-- 內容區塊  -->
+        <div class="cart_main">
+            <h1>購物車</h1>
+            <div class="cart_main_order">
+                <input type="checkbox" name="subscribe" id="chk">
+                <p class="meals_all">全選</p>
+                <p class="meals_name">商品名稱</p>
+                <p class="meals_quantity">數量</p>
+                <p class="meals_price">價格</p>
             </div>
-            <div class="problem_main_qa">
-                <h3>Q.如何烹飪？</h3>
-                <p>從冷凍狀態下取出漢堡，退冰30分鐘內，根據您的偏好使用氣炸鍋、平底鍋或烤箱來加熱。氣炸鍋建議烹飪為180度，氣炸８分鐘。平底鍋建議烹飪熱鍋後維持中火，兩面各煎約90秒。烤箱建議烹飪預熱220度，烘烤8分鐘。
-                </p>
+
+            <div class="cart_main_order2">
+                <input type="checkbox" name="subscribe" id="chk2">
+                <img src="img/商品圖/暗夜神秘堡.png" alt="">
+                <p class="name">劍俠特製堡</p>
+                <div class="cart_piece">
+                    <!-- 减少 -->
+                    <button onclick="decrement()">-</button>
+
+                    <!-- 輸入框 -->
+                    <input type="text" id="quantity3" value="1">
+
+                    <!-- 增加 -->
+                    <button onclick="increment()">+</button>
+
+                    <script>
+                        // 宣告輸入框
+                        var quantityInput = document.getElementById('quantity3');
+
+                        // 減少數量
+                        function decrement() {
+                            // 宣告目前的數量
+                            var currentValue = parseInt(quantityInput.value);
+
+                            // 如果大於1，可以減少，-1
+                            if (currentValue > 1) {
+                                quantityInput.value = currentValue - 1;
+                            }
+                        }
+
+                        // 增加數量
+                        function increment() {
+                            // 宣告目前的數量
+                            var currentValue = parseInt(quantityInput.value);
+
+                            // 目前的數量 Ａ＋＋
+                            quantityInput.value = currentValue + 1;
+                        }
+                    </script>
+                </div>
+                <p class="cart_price">$250</p>
+                <div class="cart_delete">刪除</div>
             </div>
-            <div class="problem_main_qa">
-                <h3>Q.是否需要負擔運費？</h3>
-                <p>冷凍食品運費酌收NT$160<br>
-                    商品下單後，約「5-7個工作天寄出」，不含假日及訂購當天。</p>
-            </div>
-            <div class="problem_main_qa">
-                <h3>Q.如果我對商品有疑問怎麼辦？</h3>
-                <p>不論是對於商品的烹煮或者保存方式等等，任何商品相關問題，歡迎透過客服專線：0800-00-0080。</p>
-            </div>
-            <div class="problem_main_qa">
-                <h3>Q.客服資訊</h3>
-                <p>客服專線：0800-00-0080<br>
-                    客服信箱：0800000080@com.tw</p>
-            </div>
+            <hr class="cart_main_hr">
+            <div class="cart_main_order3">
+                <input type="checkbox" name="subscribe" id="chk3">
+                <img src="img/商品圖/酪梨起司.png" alt="">
+                <p class="name2">葵花寶典堡</p>
+                <div class="cart_piece2">
+                    <!-- 减少 -->
+                    <button onclick="decrement()">-</button>
+
+                    <!-- 輸入框 -->
+                    <input type="text" id="quantity4" value="1">
+
+                    <!-- 增加 -->
+                    <button onclick="increment()">+</button>
+
+                    <script>
+                        // 宣告輸入框
+                        var quantityInput = document.getElementById('quantity4');
+
+                        // 減少數量
+                        function decrement() {
+                            // 宣告目前的數量
+                            var currentValue = parseInt(quantityInput.value);
+
+                            // 如果大於1，可以減少，-1
+                            if (currentValue > 1) {
+                                quantityInput.value = currentValue - 1;
+                            }
+                        }
+
+                        // 增加數量
+                        function increment() {
+                            // 宣告目前的數量
+                            var currentValue = parseInt(quantityInput.value);
+
+                            // 目前的數量 Ａ＋＋
+                            quantityInput.value = currentValue + 1;
+                        }
+                    </script>
+                </div>
+                <p class="cart_price2">$250</p>
+                <div class="cart_delete2">刪除</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <input type="submit" value="結帳">
         </div>
 
 
