@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 載入CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 載入font icon -->
+    <script src="https://kit.fontawesome.com/1h177a75cd75.js" crossorigin="anonymous"></script>
+    <!-- 載入google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css1h1?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- 載入google font icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,1,0" />
+
+    <script>
+        // 宣告輸入框
+        var quantityInput = document.getElementById('quantity');
+
+        // 減少數量
+        function decrement() {
+            // 宣告目前的數量
+            var currentValue = parseInt(quantityInput.value);
+
+            // 如果大於1，可以減少，-1
+            if (currentValue > 1) {
+                quantityInput.value = currentValue - 1;
+            }
+        }
+
+        // 增加數量
+        function increment() {
+            // 宣告目前的數量
+            var currentValue = parseInt(quantityInput.value);
+
+            // 目前的數量 Ａ＋＋
+            quantityInput.value = currentValue + 1;
+        }
+    </script>
+    <title>大俠漢堡堡</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <!-- logo -->
+            <!-- 圖片設定超連接 -->
+            <a href="index.html"> <img class="all_logo" src="img/logo.png" alt=""></a>
+            <!-- nav -->
+            <div class="all_nav">
+                <ul>
+                    <li><a href="meals.html">所有餐點</a></li>
+                    <li><a href="order.html">訂單查詢</a></li>
+                    <li><a href="about.html">三大承諾</a></li>
+                    <li><a href="news.html">最新消息</a></li>
+                    <li><a href="problem.html">常見問題</a></li>
+                </ul>
+            </div>
+            <!-- nav icon -->
+            <div class="all_icon">
+                <!-- 會員 -->
+                <span class="material-icons">person</span>
+                <!-- 購物車 -->
+                <span class="material-icons">shopping_cart</span>
+                <!-- 搜尋 -->
+                <span class="material-icons">search</span>
+            </div>
+        </div>
+        <!-- 產品區塊  -->
+        <div class="burger_main">
+            <div class="burger_main_top">
+                <img src="img/商品圖/暗夜神秘堡2.png" alt="">
+                <!-- 產品介紹左邊區塊 -->
+                <div class="burger_main_int">
+                <h1>劍俠特製堡</h1>
+                <span>4.5</span>
+                <!-- 五顆星星 -->
+                <div class="kid_star">
+                    <div class="kid_star1"></div>
+                    <div class="kid_star1"></div>
+                    <div class="kid_star1"></div>
+                    <div class="kid_star1"></div>
+                    <div class="kid_star1"></div>
+                </div>
+
+                <span class="sale">1萬已售出</span>
+                <p>使用植物碳染黑的麵包，搭配炭烤豬肉餅、燻煙培根和特製黑色醬汁、生菜和番茄，每一口都是一場味覺的探險。呈現出黑暗中的神秘美味。</p>
+                <!-- 數量鍵 -->
+                <div class="piece2">
+                    <!-- 减少 -->
+                    <button onclick="decrement()">-</button>
+
+                    <!-- 輸入框 -->
+                    <input type="text" id="quantity2" value="1">
+
+                    <!-- 增加 -->
+                    <button onclick="increment()">+</button>
+
+                    <script>
+                        // 宣告輸入框
+                        var quantityInput = document.getElementById('quantity');
+
+                        // 減少數量
+                        function decrement() {
+                            // 宣告目前的數量
+                            var currentValue = parseInt(quantityInput.value);
+
+                            // 如果大於1，可以減少，-1
+                            if (currentValue > 1) {
+                                quantityInput.value = currentValue - 1;
+                            }
+                        }
+
+                        // 增加數量
+                        function increment() {
+                            // 宣告目前的數量
+                            var currentValue = parseInt(quantityInput.value);
+
+                            // 目前的數量 Ａ＋＋
+                            quantityInput.value = currentValue + 1;
+                        }
+                    </script>
+                </div>
+
+                <p class="price">價格</p>
+                <p class="pr2">$250</p>
+                <input id="shoppcart" type="button" value="加入購物車" onclick="location.href='cart.html'">
+                <a href="cart.html" class="Checkout">直接結帳</a>
+            </div>
+            </div>
+            <!-- 分隔線 -->
+            <hr> 
+            <!-- 產品介紹區塊  -->
+            <div class="burger_main_int2">
+                <div class="burger_main_int3">
+                <h1>揭開神秘的暗夜美味</h1>
+                <p>夜幕降臨，品味神秘的漢堡之夜盤旋舌尖的黑色魔法</p>
+                <img src="img/bn/banner_product.jpg" alt="">
+                </div>
+                <div class="burger_main_int4">
+                    <img src="img/商品圖/暗夜神秘堡/暗夜神秘堡int.jpg" alt="">
+                    <p>碳烤豬肉，細嫩多汁，搭配特殊的黑色醬汁。獨特的組合相互輝映，豐富的肉汁與黑色醬汁交融在一起，帶來了濃郁的美味，使每一口都充滿了撲鼻的香氣和深邃的風味。</p>
+                </div>
+                   
+                    <div class="burger_main_int5">
+                         <p>獨特而神秘的漢堡，適合那些尋求新奇口味和特別體驗的美食愛好者。這款漢堡不僅擁有獨特的外觀，還有著豐富的口感和獨特的風味。每一口都像是一場味覺的探險，讓人感受到不一樣的美食魅力，帶來滿足和驚喜。</p>
+                    <img src="img/商品圖/暗夜神秘堡/暗夜神秘堡int2.jpg" alt="">
+                </div>
+                    
+                   
+
+                
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!--  商品區  -->
+            <div class="main_burger_goods">
+                <ul class="slides">
+                    <input type="radio" id="control-1" name="control" checked>
+                    <input type="radio" id="control-2" name="control">
+                    <input type="radio" id="control-3" name="control">
+                    <input type="radio" id="control-4" name="control">
+
+                    <!-- 商品本身 -->
+                    <li class="slide"><a class="slide6" href="meals_burger1.html"></a></li>
+                    <li class="slide"><a class="slide5" href="meals_burger1.html"></a></li>
+                    <li class="slide"><a class="slide4" href="meals_burger1.html"></a></li>
+                    <li class="slide"><a class="slide3" href="meals_burger1.html"></a></li>
+                    <li class="slide"><a class="slide2" href="meals_burger1.html"></a></li>
+                    <li class="slide"><a class="slide1" href="meals_burger1.html"></a></li>
+
+                    <!-- 輪播按鈕 -->
+                    <div class="controls-visible">
+                        <label for="control-1"></label>
+                        <label for="control-2"></label>
+                        <label for="control-3"></label>
+                        <label for="control-4"></label>
+
+                    </div>
+                </ul>
+            </div>
+
+
+        </div>
+
+
+
+
+
+    </header>
+
+
+    <footer>
+        <!-- <img src="img/logo.png" alt="" class="footer_logo"> -->
+        <div class="footer_nav">
+            <ul>
+                <li><a href="meals.html">所有餐點</a></li>
+                <li><a href="order.html">訂單查詢</a></li>
+                <li><a href="news.html">最新消息</a></li>
+                <li><a href="service.html">聯絡我們</a></li>
+            </ul>
+        </div>
+
+        <div class="source">
+            <p class="source_p">客服專線:0800-00-0080
+                客服信箱:0800000080@com.tw/<br>>本網站為緯育TibaMe前端工程師班第91期學員專題作品,本平台僅供學習、展示之用,無販售、商業行為等等。<br>>參考資源:門前隱味、yamahan.tokyo
+                | 圖片影片來源:freepik、pexels、Midjourney、istockphoto</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

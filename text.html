@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			body{
+				margin: 0;
+				padding: 0;
+			}
+			.box{
+				border: red solid 1px;
+				height: 40px;
+				width: 200px;
+				margin: 200px auto;
+				text-align: center;
+				padding-top: 20px;
+			}
+			.box input{
+				width: 40px;
+				text-align: center;
+			}
+			#money{
+				border: none;
+				text-align: left;
+				margin-left: 2px;
+			}
+			ul{
+				list-style: none;
+			}
+			ul li{
+				display: block;
+				float: left;
+				vertical-align: middle;
+			}
+		</style>
+		<script>
+			window.onload = function(){
+				var plus = document.getElementById("plus");
+				var i = document.getElementById("text").value;
+				var subtract = document.getElementById("subtract");
+				var money = document.getElementById("money").value;
+				plus.onclick = function(){
+					i++;
+					document.getElementById("text").value = i;
+					document.getElementById("money").value = i*money;
+				}
+				subtract.onclick = function(){
+					if (i>0) {
+						i--;
+						document.getElementById("text").value = i;
+						document.getElementById("money").value = i*money;
+					} else{
+						i=0;
+						document.getElementById("text").value = i;
+						document.getElementById("money").value = i*money;
+					}
+				}				
+			}		
+		</script>
+	</head>
+	<body>
+		<ul class="box">
+			<li><button id="plus">+</button></li>
+			<li><input type="text" id="text" value="1"/></li>
+			<li><button id="subtract">-</button></li>
+			<li>&nbsp;&nbsp;&nbsp;¥<input type="text" id="money" value="88"/></li>
+		</ul>
+		<ul class="box">
+			<li><button id="plus">+</button></li>
+			<li><input type="text" id="text" value="1"/></li>
+			<li><button id="subtract">-</button></li>
+			<li>&nbsp;&nbsp;&nbsp;¥<input type="text" id="money" value="88"/></li>
+		</ul>
+		<ul class="box">
+			<li><button id="plus">+</button></li>
+			<li><input type="text" id="text" value="1"/></li>
+			<li><button id="subtract">-</button></li>
+			<li>&nbsp;&nbsp;&nbsp;¥<input type="text" id="money" value="88"/></li>
+		</ul>
+		<ul class="box">
+			<li><button id="plus">+</button></li>
+			<li><input type="text" id="text" value="1"/></li>
+			<li><button id="subtract">-</button></li>
+			<li>&nbsp;&nbsp;&nbsp;¥<input type="text" id="money" value="88"/></li>
+		</ul>
+	</body>
+</html>

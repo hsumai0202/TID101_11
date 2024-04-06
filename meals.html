@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 載入CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 載入font icon -->
+    <script src="https://kit.fontawesome.com/1h177a75cd75.js" crossorigin="anonymous"></script>
+    <!-- 載入google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css1h1?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- 載入google font icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script>
+        // 宣告輸入框
+        var quantityInput = document.getElementById('quantity');
+
+        // 減少數量
+        function decrement() {
+            // 宣告目前的數量
+            var currentValue = parseInt(quantityInput.value);
+
+            // 如果大於1，可以減少，-1
+            if (currentValue > 1) {
+                quantityInput.value = currentValue - 1;
+            }
+        }
+
+        // 增加數量
+        function increment() {
+            // 宣告目前的數量
+            var currentValue = parseInt(quantityInput.value);
+
+            // 目前的數量 Ａ＋＋
+            quantityInput.value = currentValue + 1;
+        }
+    </script>
+    <title>大俠漢堡堡</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <!-- logo -->
+            <!-- 圖片設定超連接 -->
+            <a href="index.html"> <img class="all_logo" src="img/logo.png" alt=""></a>
+            <!-- nav -->
+            <div class="all_nav">
+                <ul>
+                    <li><a href="meals.html">所有餐點</a></li>
+                    <li><a href="order.html">訂單查詢</a></li>
+                    <li><a href="about.html">三大承諾</a></li>
+                    <li><a href="news.html">最新消息</a></li>
+                    <li><a href="problem.html">常見問題</a></li>
+                </ul>
+            </div>
+            <!-- nav icon -->
+            <div class="all_icon">
+                <!-- 會員 -->
+                <span class="material-icons">person</span>
+                <!-- 購物車 -->
+                <span class="material-icons">shopping_cart</span>
+                <!-- 搜尋 -->
+                <span class="material-icons">search</span>
+            </div>
+        </div>
+        <!-- 所有餐點區塊  -->
+        <div class="meals_main">
+            <h1>所有餐點</h1>
+            <div class="meals_main_1">
+                <ul>
+                    <li> 
+                        <a href="meals_burger1.html" title=""><img src="img/商品圖/暗夜神秘堡2.png"></a>
+                        <a class="h2" href="meals_burger1.html">劍俠特製堡</a>
+                        <h3>$250</h3>
+                        <button id="shopp" type="button">加入購物車</button> 
+                        <!-- 數量鍵 -->
+                        <div class="piece">
+                            <!-- 减少 -->
+                            <button onclick="decrement()">-</button>
+
+                            <!-- 輸入框 -->
+                            <input type="text" id="quantity" value="1">
+
+                            <!-- 增加 -->
+                            <button onclick="increment()">+</button>
+
+                        
+                        </div>
+
+                    </li>
+
+                    <li>
+                        <img src="img/商品圖/大滿貫2.png">
+                        <a class="h2" href="meals_burger1.html">岳飛獅子吼堡</a>
+                        <h3>$200</h3>
+                        <button id="shopp" type="button">加入購物車</button> 
+                        <!-- 數量鍵 -->
+                        <div class="piece">
+                            <!-- 减少 -->
+                            <button onclick="decrement()">-</button>
+
+                            <!-- 輸入框 -->
+                            <input type="text" id="quantity" value="1">
+
+                            <!-- 增加 -->
+                            <button onclick="increment()">+</button>
+
+                            <script>
+                                // 宣告輸入框
+                                var quantityInput = document.getElementById('quantity');
+
+                                // 減少數量
+                                function decrement() {
+                                    // 宣告目前的數量
+                                    var currentValue = parseInt(quantityInput.value);
+
+                                    // 如果大於1，可以減少，-1
+                                    if (currentValue > 1) {
+                                        quantityInput.value = currentValue - 1;
+                                    }
+                                }
+
+                                // 增加數量
+                                function increment() {
+                                    // 宣告目前的數量
+                                    var currentValue = parseInt(quantityInput.value);
+
+                                    // 目前的數量 Ａ＋＋
+                                    quantityInput.value = currentValue + 1;
+                                }
+                            </script>
+                        </div>
+
+                    </li>
+                    <li>
+                        <img src="img/商品圖/起司豬肉2.png">
+                        <a class="h2" href="meals_burger1.html">太極掌漢堡</a>
+                        <h3>$160</h3>
+                        <button id="shopp" type="button">加入購物車</button> 
+                        <!-- 數量鍵 -->
+                        <div class="piece">
+                            <!-- 减少 -->
+                            <button onclick="decrement()">-</button>
+
+                            <!-- 輸入框 -->
+                            <input type="text" id="quantity" value="1">
+
+                            <!-- 增加 -->
+                            <button onclick="increment()">+</button>
+
+                            <script>
+                                // 宣告輸入框
+                                var quantityInput = document.getElementById('quantity');
+
+                                // 減少數量
+                                function decrement() {
+                                    // 宣告目前的數量
+                                    var currentValue = parseInt(quantityInput.value);
+
+                                    // 如果大於1，可以減少，-1
+                                    if (currentValue > 1) {
+                                        quantityInput.value = currentValue - 1;
+                                    }
+                                }
+
+                                // 增加數量
+                                function increment() {
+                                    // 宣告目前的數量
+                                    var currentValue = parseInt(quantityInput.value);
+
+                                    // 目前的數量 Ａ＋＋
+                                    quantityInput.value = currentValue + 1;
+                                }
+                            </script>
+                        </div>
+
+                    </li>
+                    <li>
+                        <img src="img/商品圖/酪梨起司2.png">
+                        <a class="h2" href="meals_burger1.html">葵花寶典堡</a>
+                        <h3>$200</h3>
+                        <button id="shopp" type="button">加入購物車</button> 
+                        <!-- 數量鍵 -->
+                        <div class="piece">
+                            <!-- 减少 -->
+                            <button onclick="decrement()">-</button>
+
+                            <!-- 輸入框 -->
+                            <input type="text" id="quantity" value="1">
+
+                            <!-- 增加 -->
+                            <button onclick="increment()">+</button>
+
+                            <script>
+                                // 宣告輸入框
+                                var quantityInput = document.getElementById('quantity');
+
+                                // 減少數量
+                                function decrement() {
+                                    // 宣告目前的數量
+                                    var currentValue = parseInt(quantityInput.value);
+
+                                    // 如果大於1，可以減少，-1
+                                    if (currentValue > 1) {
+                                        quantityInput.value = currentValue - 1;
+                                    }
+                                }
+
+                                // 增加數量
+                                function increment() {
+                                    // 宣告目前的數量
+                                    var currentValue = parseInt(quantityInput.value);
+
+                                    // 目前的數量 Ａ＋＋
+                                    quantityInput.value = currentValue + 1;
+                                }
+                            </script>
+                        </div>
+
+                    </li>
+                    <li>
+                        <img src="img/商品圖/鳳梨豬2.png">
+                        <a class="h2" href="meals_burger1.html">鳳凰展翅堡</a>
+                        <h3>$160</h3>
+                        <button id="shopp" type="button">加入購物車</button> 
+                        <!-- 數量鍵 -->
+                        <div class="piece">
+                            <!-- 减少 -->
+                            <button onclick="decrement()">-</button>
+
+                            <!-- 輸入框 -->
+                            <input type="text" id="quantity" value="1">
+
+                            <!-- 增加 -->
+                            <button onclick="increment()">+</button>
+
+                            <script>
+                                // 宣告輸入框
+                                var quantityInput = document.getElementById('quantity');
+
+                                // 減少數量
+                                function decrement() {
+                                    // 宣告目前的數量
+                                    var currentValue = parseInt(quantityInput.value);
+
+                                    // 如果大於1，可以減少，-1
+                                    if (currentValue > 1) {
+                                        quantityInput.value = currentValue - 1;
+                                    }
+                                }
+
+                                // 增加數量
+                                function increment() {
+                                    // 宣告目前的數量
+                                    var currentValue = parseInt(quantityInput.value);
+
+                                    // 目前的數量 Ａ＋＋
+                                    quantityInput.value = currentValue + 1;
+                                }
+                            </script>
+                        </div>
+
+                    </li>
+                    <li>
+                        <img src="img/商品圖/經典美式2.png">
+                        <a class="h2" href="meals_burger1.html">忠義勇者堡</a>
+                        <h3>$150</h3>
+                        <button id="shopp" type="button">加入購物車</button> 
+                        <!-- 數量鍵 -->
+                        <div class="piece">
+                            <!-- 减少 -->
+                            <button onclick="decrement()">-</button>
+
+                            <!-- 輸入框 -->
+                            <input type="text" id="quantity" value="1">
+
+                            <!-- 增加 -->
+                            <button onclick="increment()">+</button>
+
+                            <script>
+                                // 宣告輸入框
+                                var quantityInput = document.getElementById('quantity');
+
+                                // 減少數量
+                                function decrement() {
+                                    // 宣告目前的數量
+                                    var currentValue = parseInt(quantityInput.value);
+
+                                    // 如果大於1，可以減少，-1
+                                    if (currentValue > 1) {
+                                        quantityInput.value = currentValue - 1;
+                                    }
+                                }
+
+                                // 增加數量
+                                function increment() {
+                                    // 宣告目前的數量
+                                    var currentValue = parseInt(quantityInput.value);
+
+                                    // 目前的數量 Ａ＋＋
+                                    quantityInput.value = currentValue + 1;
+                                }
+                            </script>
+                        </div>
+
+                    </li>
+                    
+
+                </ul>
+            </div>
+
+            
+        </div>
+
+
+
+
+    </header>
+
+
+    <footer>
+        <!-- <img src="img/logo.png" alt="" class="footer_logo"> -->
+        <div class="footer_nav">
+            <ul>
+                <li><a href="meals.html">所有餐點</a></li>
+                <li><a href="order.html">訂單查詢</a></li>
+                <li><a href="news.html">最新消息</a></li>
+                <li><a href="service.html">聯絡我們</a></li>
+            </ul>
+        </div>
+
+        <div class="source">
+            <p class="source_p">客服專線:0800-00-0080
+                客服信箱:0800000080@com.tw/<br>>本網站為緯育TibaMe前端工程師班第91期學員專題作品,本平台僅供學習、展示之用,無販售、商業行為等等。<br>>參考資源:門前隱味、yamahan.tokyo
+                | 圖片影片來源:freepik、pexels、Midjourney、istockphoto</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
