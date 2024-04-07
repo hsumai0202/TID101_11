@@ -82,9 +82,9 @@
                 <p class="cart_price6">$200</p>
             </div>
             <hr class="cart_main_hr4">
-            <!-- 表單區 -->
+            <!-- 訂購人表單區 -->
             <div class="cart_map">
-                <h3>寄送資訊</h3>
+                <h3>訂購人資訊</h3>
                 <div class="logistics">
                     <input type="button" value="超商取貨" id="logistics">
                     <input type="button" value="冷凍宅配" id="logistics_home">
@@ -108,11 +108,35 @@
                         <li>
                             <p class="warning">請確認你已提供與身份證件相同之真實姓名，以便取貨時供超商店員核對</p>
                         </li>
+                    </ul>
+                </div>
+                <!-- 收貨人表單區 -->
+                <h3 class="recipient">收貨人資訊</h3>
+                <input type="checkbox" name="subscribe" id="order_chk"> <p class="order_text">同訂購人資訊</p>
+                <!-- 資訊區 -->
+                <div class="log">
+                    <ul>
+                        <li>
+                            <p>姓名</p>
+                            <input type="text" class="input_name" placeholder="輸入姓名">
+                        </li>
+                        <li>
+                            <p>電話號碼</p>
+                            <input type="text" class="phone" placeholder="輸入電話">
+                        </li>
+                        <li>
+                            <p>聯絡地址</p>
+                            <input type="text" class="address" placeholder="輸入地址">
                         </li>
 
                     </ul>
-
+                    <h3>付款方式</h3>
+                    <div class="order">
+                        <input type="button" value="貨到付款" id="payment">
+                        <input type="button" value="線上轉帳" id="payment_online">
+                    </div>
                 </div>
+            </div>
 
 
 
