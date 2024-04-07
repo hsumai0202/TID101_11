@@ -550,7 +550,7 @@ footer{
 
 .checkout_main{
     width: 100%;
-    height: 600px;
+    height: 1000px;
 }
 
 .checkout_main_order{
@@ -580,42 +580,318 @@ footer{
 
 }
 
-.meals_all{
-    width: 100px;
+.meals_name1{
+    /* outline: 1px solid darkmagenta; */
+    width: 30px;
     position: relative;
-    bottom: 7px;
-    left: 40px;
-    font-size: 14px;
-    font-family: "Noto Sans TC", sans-serif;
-    color: #838383;
-
-}
-
-.meals_name{
-    width: 100px;
-    position: relative;
-    bottom: 20px;
-    left: 250px;
+    top: 15px;
+    left: 50px;
     font-size: 14px;
     font-family: "Noto Sans TC", sans-serif;
     color: #838383;
 }
 
-.meals_quantity{
-    width: 100px;
+.meals_price1{
+    /* outline: 1px solid darkmagenta; */
+    width: 30px;
     position: relative;
-    top: -36px;
-    left: 500px;
+    top: 0;
+    left: 350px;
     font-size: 14px;
     font-family: "Noto Sans TC", sans-serif;
     color: #838383;
 }
-.meals_price{
-    width: 100px;
+
+.meals_quantity1{
+    /* outline: 1px solid darkmagenta; */
+    width: 30px;
     position: relative;
-    bottom: 50px;
-    left: 760px;
+    top: -14px;
+    left: 550px;
     font-size: 14px;
     font-family: "Noto Sans TC", sans-serif;
     color: #838383;
+}
+
+.meals_price2{
+    /* outline: 1px solid darkmagenta; */
+    width: 30px;
+    position: relative;
+    top: -28px;
+    left: 770px;
+    font-size: 14px;
+    font-family: "Noto Sans TC", sans-serif;
+    color: #838383;
+}
+
+
+
+/* 訂單一 */
+.name3{
+    /* outline: 1px solid darkcyan; */
+    width: 100px;
+    position: relative;
+    bottom: 62px;
+    left: 110px;
+    font-size: 20px;
+}
+
+.cart_price3{
+    /* outline: 1px solid darkcyan; */
+    width: 80px;
+    position: relative;
+    bottom: 80px;
+    left: 317px;
+    font-size: 20px;
+}
+
+.cart_quantity3{
+    /* outline: 1px solid darkcyan; */
+    width: 30px;
+    position: relative;
+    bottom: 100px;
+    left: 540px;
+    font-size: 20px;
+}
+
+.cart_price4{
+    /* outline: 1px solid darkcyan; */
+    width: 30px;
+    position: relative;
+    bottom: 120px;
+    left: 740px;
+    font-size: 20px;
+}
+
+/* 訂單二 */
+.name4{
+    /* outline: 1px solid darkcyan; */
+    width: 100px;
+    position: relative;
+    bottom: 60px;
+    left: 110px;
+    font-size: 20px;
+}
+
+.cart_price5{
+    /* outline: 1px solid darkcyan; */
+    width: 80px;
+    position: relative;
+    bottom: 80px;
+    left: 317px;
+    font-size: 20px;
+}
+
+.cart_quantity4{
+    /* outline: 1px solid darkcyan; */
+    width: 30px;
+    position: relative;
+    bottom: 100px;
+    left: 540px;
+    font-size: 20px;
+}
+
+.cart_price6{
+    /* outline: 1px solid darkcyan; */
+    width: 30px;
+    position: relative;
+    bottom: 120px;
+    left: 740px;
+    font-size: 20px;
+}
+
+/* 結帳 */
+
+.cart_checkout{
+    /* outline: 2px solid darkblue; */
+    width: 200px;
+    position: relative;
+    left: 770px;
+}
+
+
+.cart_checkout h1{
+    /* outline: 2px solid darkblue; */
+    color: #F05E1C;
+    font-weight: 600;
+    width: 100px;
+    padding-top: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+    position: relative;
+    left: 85px;
+    top: -32px;
+}
+
+
+.cart_checkout h3{
+    /* outline: 2px solid darkblue; */
+    width: 100px;
+}
+
+
+/* 分隔線 */
+.cart_main_hr3{
+    width: 990px;
+    margin: 0 auto;
+    border-bottom: 1px solid #b0b0b0;
+    position: absolute;
+    top: 400px;
+    left: 100px;
+}
+
+.cart_main_hr4{
+    width: 990px;
+    margin: 0 auto;
+    border-bottom: 1px solid #b0b0b0;
+    position: absolute;
+    top: 550px;
+    left: 100px;
+}
+
+
+/* ---------------- 寄送資訊 ------------------ */
+
+
+.cart_map h3{
+    width: 530px;
+    font-size: 22px;
+    color: #313131;
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 600;
+    letter-spacing: 5px;
+    padding-bottom: 30px;
+
+}
+
+.logistics{
+    width: 100%;
+
+}
+
+#logistics{
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 20px;
+    padding-bottom: 20px;
+    border: 1px solid #F05E1C;
+    background-color: #ffffff00;
+    color: #F05E1C;
+    line-height: 40px;
+}
+
+#logistics:hover{
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 20px;
+    padding-bottom: 20px;
+    border: 0px;
+    background-color: #F05E1C;
+    color: #ffffff;
+    line-height: 40px;
+}
+
+
+#logistics_home{
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 20px;
+    padding-bottom: 20px;
+    background: #F05E1C;
+    border: 0px;
+    color: #fff;
+    line-height: 40px;
+}
+
+
+
+.cart_map{
+    /* outline: 2px solid fuchsia; */
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 120px;
+    position: absolute;
+    top: 600px;
+
+
+}
+
+
+/* ---------------- inupt 資訊 ------------------ */
+
+.inf{
+        /* outline: 2px solid fuchsia; */
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 20px;
+    
+}
+
+.inf p{
+    width: 530px;
+    font-size: 16px;
+    color: #313131;
+    overflow: hidden;
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+
+.input_name{
+	width: 990px;
+	height: 30px;
+    border: 0;
+    background-color: #ffffff00;
+	border-bottom: 1px solid #282828;
+	outline: 0;
+	padding-left: 2px;
+	color: #282828;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.phone{
+	width: 990px;
+	height: 30px;
+    border: 0;
+    background-color: #ffffff00;
+	border-bottom: 1px solid #282828;
+	outline: 0;
+	padding-left: 2px;
+	color: #282828;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.address{
+	width: 990px;
+	height: 30px;
+    border: 0;
+    background-color: #ffffff00;
+	border-bottom: 1px solid #282828;
+	outline: 0;
+	padding-left: 2px;
+	color: #2828280;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+li .warning{
+    width: 530px;
+    font-size: 14px;
+    color: #838383;
+    overflow: hidden;
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 25px;
 }
