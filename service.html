@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 載入CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/service_style.css">
     <!-- 載入font icon -->
     <script src="https://kit.fontawesome.com/1h177a75cd75.js" crossorigin="anonymous"></script>
     <!-- 載入google font -->
@@ -17,9 +18,8 @@
     <!-- 載入google font icon -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,1,0" />
-            <!-- 分頁 icon -->
-            <link rel="icon" type="imge/png" sizes="32x32"
-            href="img/iocn.png" />
+    <!-- 分頁 icon -->
+    <link rel="icon" type="imge/png" sizes="32x32" href="img/iocn.png" />
 
     <title>大俠漢堡堡</title>
 </head>
@@ -44,68 +44,49 @@
             <!-- nav icon -->
             <div class="all_icon">
                 <ul>
-                <!-- 會員 -->
-                <li class="person"><a href=""><span class="material-symbols-outlined" style="color:#F05E1C;">person</span></a></li>
-                <!-- 購物車 -->
-                <li class="shopping_cart"  ><a href="cart.html"><span class="material-symbols-outlined" style="color:#F05E1C;" >shopping_cart</span></a></li>
+                    <!-- 會員 -->
+                    <li class="person"><a href=""><span class="material-symbols-outlined"
+                                style="color:#F05E1C;">person</span></a></li>
+                    <!-- 購物車 -->
+                    <li class="shopping_cart"><a href="cart.html"><span class="material-symbols-outlined"
+                                style="color:#F05E1C;">shopping_cart</span></a></li>
                 </ul>
             </div>
         </div>
         <!-- 聯絡我們內容區塊  -->
+
+        <div class="service_main"></div>
         <h1>聯絡我們</h1>
-        <span class="line"></span>
-        <ul>
-            <!-- 姓名 -->
-            <!-- 文字框有預設的文字呈現為placeholder="輸入文字" -->
-            <li>
-                <p>Name</p>
-                <input type="text" class="name" placeholder="名字">
+        <div class="service">
+            <ul>
+                <!-- 姓名 -->
+                <!-- 文字框有預設的文字呈現為placeholder="輸入文字" -->
+                <li>
+                    <input type="text" class="name" placeholder="您的姓名">
+                </li>
+                <li>
+                    <input type="text" class="phone" placeholder="您的電話">
+                </li>
+                <li>
+                    <input type="text" class="address" placeholder="您的信箱">
+                </li>
 
-            </li>
-            <!-- 電話 -->
-            <li>
-                <p>Phone</p>
-                <input type="text" class="phone" placeholder="電話">
+                <li>
+                    <p>您的意見</p>
+                    <textarea></textarea>
+                </li>
+                <li>
+                    <p>訂閱電子報</p>
+                    <input type="checkbox" id="chk">
+                    <label for="chk">我要訂閱！</label>
+                </li>
+                <li>
+                    <input type="submit" class="send" value="送出">
+                </li>
 
-            </li>
-            <!-- 地址 -->
-            <li>
-                <p>Address</p>
-                <input type="text" class="address" placeholder="地址">
-
-            </li>
-            <!-- 姓別 -->
-            <li>
-                <p>Gender</p>
-                <!-- 預設的圓形表單，可以同時選取所以加上name可以達到只選擇一個圓形表單 -->
-                <input type="radio" class="male" name="xxx">
-                <span>Male</span>
-                <input type="radio" class="female" name="xxx">
-                <span>Female</span>
-            </li>
-            <!-- 訂閱 -->
-            <li>
-                <p>Subscribe</p>
-                <input type="checkbox" id="chk">
-
-                <!-- label 連同文字都可以點擊 -->
-                <label for="chk">Email me!</label>
-                <!-- <span>Email me!</span> -->
-            </li>
-            <!-- 建議 -->
-            <li>
-                <p>Suggest</p>
-                <textarea></textarea>
-            </li>
-            <!-- 送出 -->
-            <li>
-                <!-- 想要更改原本按鈕的文字 加上 value即可 -->
-                <input type="submit" class="send" value="送出">
-            </li>
-
-        </ul>
+            </ul>
         </div>
-
+        </div>
 
 
     </header>

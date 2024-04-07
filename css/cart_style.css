@@ -1,227 +1,5 @@
 @import url("reset.css");
 
-/*  googlefont */
-.noto-serif tc-regular {
-    font-family: "Noto Serif TC", serif, "Noto Sans TC", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-
-body{
-    background-image: url(../img/bg2.jpg);
-    background-size: cover;
-}
-
-header{
-    /* outline: 5px solid fuchsia; */
-    width: 100%;
-    height: 100%;
-
-}
-
-footer{
-    /* outline: 5px solid fuchsia; */
-    width: 100%;
-    height: 100%;
-    background-color: #FFF3DD;
-    margin-top: 50px;
-    
-}
-
-/* ----------------  nav ------------------ */
-
-.nav{
-    width: 100%;
-    height: 120px;
-    background-color: #ffffff;
-
-}
-
-/* 導覽列 */
-.all_nav{
-    width: 100%;
-    margin: 0 auto;
-
-}
-.all_nav ul{
-    /* border: 2px solid green; */
-    margin: 0 auto;
-    text-align: center;
-    position: absolute;
-    top: 25px;
-    left: 310px;
-
-}
-
-.all_nav li {
-    /* border: 2px solid green; */
-    display:inline-block;
-    position: relative;
-    margin: 20px;
-
-
-
-}
-
-/* 按鈕 */
-.all_nav a{
-    display: block;
-    width: 80px;
-    height: 20px;
-    padding: 5px;
-    text-decoration: none;
-    font-size: 16px;
-    color: #F05E1C;
-    font-family: "Noto Sans TC", sans-serif;
-    font-weight: 400;
-}
-
-
-/* 左上角的logo */
-.all_logo{
-    height: 90px;
-    /* float: left; */
-    margin: 14px 0 0 31px;
-}
-
-/* 右上角的icon */
-.all_icon ul{ 
-    /* outline: 2px solid rgb(184, 11, 175); */
-    display: block;
-    width: 120px;
-    position: absolute;
-    top: 15px;
-    right: 0px;
-
-
-}
-.all_icon li{ 
-    /* outline: 2px solid darkgoldenrod; */
-    position: absolute;
-    width: 20px;
-    top: 15px;
-    right: 20px;
-
-}
-.all_icon .person {
-    display: block;
-    color: #F05E1C;
-    position: fixed;
-    /* position: relative; */
-    right: 60px;
-    top: 30px;
-    z-index: 1;
-}
-
-.all_icon .shopping_cart {
-    text-decoration: none;
-    display: block;
-    /* color: #F05E1C; */
-    position: fixed;
-    /* position: relative; */
-    right: 30px;
-    top: 30px;
-    z-index: 1;
-}
-
-
-
-/* ---------------- footer ------------------ */
-
-.footer_nav{
-    /* border: 10px solid sandybrown ; */
-    width: 100%;
-    margin: 0 auto;
-}
-
-.footer_nav ul{
-    /* border: 2px solid green; */
-    height: 50px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.footer_nav li {
-    /* border: 2px solid green; */
-    display:inline-block;
-    position:relative;
-    width: 100px;
-    height: 20px;
-    margin: 0 auto;
-    padding-top: 15px;
-}
-
-.source{
-    background-color: #282828;
-    width: 100%;
-    height: 90px;
-    margin: 0 auto;
-}
-
-.source_p{
-    width: 100%;
-    color: #ffffff;
-    font-size: 13px;
-    font-family: "Noto Sans TC", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    letter-spacing: 2px;
-    line-height: 25px;
-    text-align: center;
-    display: inline-block;
-    padding-top: 5px;
-}
-
-/* 按鈕 */
-.footer_nav a{
-
-    width: 100%;
-    height: 20px;
-    text-decoration: none;
-    font-size: 16px;
-    color: #932E00;
-    font-family: "Noto Sans TC", sans-serif;
-    font-weight: 400;
-}
-
-
-
-/* ---------------- 頁碼 ------------------ */
-
-.page-normal{
-    text-align: center;
-}
-
-
-.page-normal a{
-    border: 1px solid #F05E1C;
-    padding: 5px 7px;
-    color: #F05E1C;
-    margin-left: 20px;
-    text-decoration: none;
-    font-family: "Noto Sans TC", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-}
-
-.page-normal a:hover, .page-normal .page-prev:hover {
-    background-color: #ffbe94;
-}
-
-
-/*設置左單括號 < 的css樣式*/
-.page-normal .page-prev{
-    color: #F05E1C;
-}
-
-.page-normal a, .page-normal a:hover, .page-normal .page-prev {
-    border: 1px solid #F05E1C;
-    padding: 5px 7px;
-}
-
-/* 以上為共用css區域 */
-
 /* ---------------- 購物車 ------------------ */
 
 .cart_main{
@@ -1060,4 +838,246 @@ li .warning{
     position: relative;
     bottom: 0px;
     left: 155px;
+}
+
+
+
+/* ---------------- 訂單頁面 ------------------ */
+
+.order_main{
+    /* outline: 1px solid fuchsia; */
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+}
+
+
+.order_main h1{
+    width: 530px;
+    font-size: 32px;
+    color: #313131;
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 400;
+    letter-spacing: 5px;
+    padding-top: 50px;
+    padding-left: 120px;
+    margin-bottom: 20px;
+}
+
+
+/* 頁籤設定 */
+#tab {
+    width: 900px;
+    height: 50px;
+    border-bottom: solid 1px #282828;
+    margin: 0 auto;
+}
+
+.tab-content-1, .tab-content-2, .tab-content-3, .tab-content-4, .tab-content-5, .tab-content-6, .tab-content-7{
+    width: 860px;
+    background-color: #83838337;
+    border-radius: 20px;
+    position: relative;
+    top: 40px;
+}
+
+#tab > ul {
+    /* overflow: hidden; */
+    margin: 0;
+    padding: 10px 20px 0 20px;
+}
+
+/* 文字 */
+#tab > ul > li > a { 
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #282828;
+    float: left;
+    padding: 10px;
+    margin-left: 5px;
+    padding-right: 50px;
+}
+
+
+#tab > ul > li > a:hover { 
+    text-decoration: none;
+    font-size: 15px;
+    color: #F05E1C;
+    float: left;
+    padding: 10px;
+    margin-left: 5px;
+    padding-right: 50px;
+}
+
+
+#tab > div {
+    clear: both;
+    padding: 0 15px;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+/*選擇其他頁籤時，第一個要變回橘色*/
+span:target ~ #tab > ul li:first-child a {
+    /* background: #F05E1C; */
+}
+
+span:target ~ #tab > div:first-of-type {
+    visibility: hidden;
+    height: 0;
+    padding: 0 15px;
+}
+
+/*頁籤變換設定*/
+span ~ #tab > ul li:first-child a,
+#tab-1:target ~ #tab > ul li a[href$="#tab-1"],
+#tab-2:target ~ #tab > ul li a[href$="#tab-2"],
+#tab-3:target ~ #tab > ul li a[href$="#tab-3"],
+#tab-4:target ~ #tab > ul li a[href$="#tab-4"],
+#tab-5:target ~ #tab > ul li a[href$="#tab-5"],
+#tab-6:target ~ #tab > ul li a[href$="#tab-6"],
+#tab-7:target ~ #tab > ul li a[href$="#tab-7"] {
+    /* background: #fff; */
+    border-radius: 5px 5px 0 0;
+}
+
+span ~ #tab > ul li:first-child a::before,
+#tab-1:target ~ #tab > ul li a[href$="#tab-1"]::before,
+#tab-2:target ~ #tab > ul li a[href$="#tab-2"]::before,
+#tab-3:target ~ #tab > ul li a[href$="#tab-3"]::before,
+#tab-4:target ~ #tab > ul li a[href$="#tab-4"]::before,
+#tab-5:target ~ #tab > ul li a[href$="#tab-5"]::before,
+#tab-6:target ~ #tab > ul li a[href$="#tab-6"]::before,
+#tab-7:target ~ #tab > ul li a[href$="#tab-7"]::before  {
+    /* background-color: #fff; */
+    height: 100%;
+}
+
+/* 頁籤下方內容選擇 */
+span ~ #tab > div:first-of-type,
+#tab-1:target ~ #tab > div.tab-content-1,
+#tab-2:target ~ #tab > div.tab-content-2,
+#tab-3:target ~ #tab > div.tab-content-3,
+#tab-4:target ~ #tab > div.tab-content-4,
+#tab-5:target ~ #tab > div.tab-content-5,
+#tab-6:target ~ #tab > div.tab-content-6,
+#tab-7:target ~ #tab > div.tab-content-7  {
+    visibility: visible;
+    height: 400px;
+    /* background: #fff; */
+}
+
+/* 隱藏 定義頁籤區 */
+span  {
+    display: none;
+}
+
+
+img{
+    padding-top: 10px;
+    width: 100px;
+
+}
+h2{
+    font-size: 16px;
+    color: #313131;
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 400;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.tab-content_p{
+    position: relative;
+    top: -70px;
+    left: 130px;
+}
+
+.tab-content_p2{
+    position: relative;
+    top: -80px;
+    left: 730px;
+}
+
+.tab-content_p3{
+    position: relative;
+    top: -60px;
+    left: 130px;
+}
+
+.tab-content_p4{
+    position: relative;
+    top: -80px;
+    left: 730px;
+}
+
+.tab-content_order{
+    /* outline:  1px solid aqua; */
+    height: 100px;
+}
+
+.tab-content_hr{
+    position: relative;
+    top: -40px;
+    left: 0px;
+}
+
+.tab-content_p5{
+    font-size: 22px;
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 400;
+    position: relative;
+    top: -20px;
+    left: 600px;
+}
+
+
+#checkout3{
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 16px;
+    padding-bottom: 20px;
+    background: #F05E1C;
+    border: 0px;
+    color: #fff;
+    line-height: 40px;
+    position: relative;
+    bottom: 50px;
+    left: 0px;
+}
+
+#checkout4{
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 16px;
+    padding-bottom: 20px;
+    background-color: #ffffff00;
+    border: 1px solid #F05E1C;
+    color: #F05E1C;
+    line-height: 40px;
+    position: relative;
+    bottom: 50px;
+    left: 20px;
+}
+
+#checkout4:hover{
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 16px;
+    padding-bottom: 20px;
+    background: #F05E1C;
+    border: 0px;
+    color: #fff;
+    line-height: 40px;
+    position: relative;
+    bottom: 50px;
+    left: 20px;
 }
