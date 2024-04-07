@@ -260,6 +260,7 @@ footer{
 }
 
 .meals_all{
+    width: 100px;
     position: relative;
     bottom: 7px;
     left: 40px;
@@ -270,6 +271,7 @@ footer{
 }
 
 .meals_name{
+    width: 100px;
     position: relative;
     bottom: 20px;
     left: 250px;
@@ -279,6 +281,7 @@ footer{
 }
 
 .meals_quantity{
+    width: 100px;
     position: relative;
     top: -36px;
     left: 500px;
@@ -287,6 +290,7 @@ footer{
     color: #838383;
 }
 .meals_price{
+    width: 100px;
     position: relative;
     bottom: 50px;
     left: 760px;
@@ -313,7 +317,8 @@ footer{
 
 
 .cart_piece{
-    width: 220px;
+    /* outline: 1px solid darkcyan; */
+    width: 210px;
     position: relative;
     bottom: 84px;
     left: 407px;
@@ -346,6 +351,8 @@ footer{
 }
 
 .name{
+    /* outline: 1px solid darkcyan; */
+    width: 100px;
     position: relative;
     bottom: 62px;
     left: 217px;
@@ -353,6 +360,8 @@ footer{
 }
 
 .cart_price{
+    /* outline: 1px solid darkcyan; */
+    width: 80px;
     position: relative;
     bottom: 112px;
     left: 737px;
@@ -360,6 +369,8 @@ footer{
 }
 
 .cart_delete{
+    /* outline: 1px solid darkcyan; */
+    width: 100px;
     position: relative;
     bottom: 128px;
     left: 807px;
@@ -377,6 +388,7 @@ footer{
 /* 訂單二 */
 
 .cart_main_order3{
+    /* outline: 1px solid darkcyan; */
     width: 990px;
     height: 100px;
     margin: 0 auto;
@@ -400,8 +412,18 @@ footer{
     left: 90px;
 }
 
+.cart_main_hr2{
+    width: 990px;
+    margin: 0 auto;
+    border-bottom: 1px solid #b0b0b0;
+    position: absolute;
+    top: 130px;
+    left: -30px;
+}
+
 .cart_piece2{
-    width: 900px;
+    /* outline: 1px solid darkcyan; */
+    width: 180px;
     position: relative;
     bottom: 84px;
     left: 407px;
@@ -434,6 +456,8 @@ footer{
 }
 
 .name2{
+    /* outline: 1px solid darkcyan; */
+    width: 100px;
     position: relative;
     bottom: 62px;
     left: 217px;
@@ -441,6 +465,8 @@ footer{
 }
 
 .cart_price2{
+    /* outline: 1px solid darkcyan; */
+    width: 100px;
     position: relative;
     bottom: 112px;
     left: 737px;
@@ -448,6 +474,8 @@ footer{
 }
 
 .cart_delete2{
+    /* outline: 1px solid darkcyan; */
+    width: 100px;
     position: relative;
     bottom: 128px;
     left: 807px;
@@ -514,4 +542,80 @@ footer{
     border: 0px;
     color: #fff;
     line-height: 40px;
+}
+
+
+/* ---------------- 訂單 ------------------ */
+
+
+.checkout_main{
+    width: 100%;
+    height: 600px;
+}
+
+.checkout_main_order{
+    width: 990px;
+    height: 40px;
+    margin: 0 auto;
+    background-color: #ffffffa4;
+    border-radius: 20px;
+    position: absolute;
+    top: 220px;
+    left: 100px;
+    font-size: 14px;
+    font-family: "Noto Sans TC", sans-serif;
+    color: #838383;
+}
+
+.checkout_main h1{
+    width: 530px;
+    font-size: 32px;
+    color: #313131;
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 400;
+    letter-spacing: 5px;
+    padding-top: 50px;
+    padding-left: 120px;
+    margin-bottom: 20px;
+
+}
+
+.meals_all{
+    width: 100px;
+    position: relative;
+    bottom: 7px;
+    left: 40px;
+    font-size: 14px;
+    font-family: "Noto Sans TC", sans-serif;
+    color: #838383;
+
+}
+
+.meals_name{
+    width: 100px;
+    position: relative;
+    bottom: 20px;
+    left: 250px;
+    font-size: 14px;
+    font-family: "Noto Sans TC", sans-serif;
+    color: #838383;
+}
+
+.meals_quantity{
+    width: 100px;
+    position: relative;
+    top: -36px;
+    left: 500px;
+    font-size: 14px;
+    font-family: "Noto Sans TC", sans-serif;
+    color: #838383;
+}
+.meals_price{
+    width: 100px;
+    position: relative;
+    bottom: 50px;
+    left: 760px;
+    font-size: 14px;
+    font-family: "Noto Sans TC", sans-serif;
+    color: #838383;
 }

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 載入CSS -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/cart_style.css">
+    <!-- 載入font icon -->
+    <script src="https://kit.fontawesome.com/1h177a75cd75.js" crossorigin="anonymous"></script>
+    <!-- 載入google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css1h1?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- 載入google font icon -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,1,0" />
+
+    <title>大俠漢堡堡</title>
+</head>
+
+<body>
+    <!-- top nav  -->
+    <header>
+        <div class="nav">
+            <!-- logo -->
+            <!-- 圖片設定超連接 -->
+            <a href="index.html"> <img class="all_logo" src="img/logo.png" alt=""></a>
+            <!-- nav -->
+            <div class="all_nav">
+                <ul>
+                    <li><a href="meals.html">所有餐點</a></li>
+                    <li><a href="order.html">訂單查詢</a></li>
+                    <li><a href="about.html">三大承諾</a></li>
+                    <li><a href="news.html">最新消息</a></li>
+                    <li><a href="problem.html">常見問題</a></li>
+                </ul>
+            </div>
+            <!-- nav icon -->
+            <div class="all_icon">
+                <ul>
+                    <!-- 會員 -->
+                    <li class="person"><a href=""><span class="material-symbols-outlined"
+                                style="color:#F05E1C;">person</span></a></li>
+                    <!-- 購物車 -->
+                    <li class="shopping_cart"><a href="cart.html"><span class="material-symbols-outlined"
+                                style="color:#F05E1C;">shopping_cart</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 內容區塊  -->
+        <div class="checkout_main">
+            <h1>訂單商品</h1>
+            <div class="checkout_main_order">
+                <p class="meals_name1">商品</p>
+                <p class="meals_price1">單價</p>
+                <p class="meals_quantity1">數量</p>
+                <p class="meals_price2">總價</p>
+            </div>
+
+            <div class="cart_main_order2">
+                <img src="img/商品圖/暗夜神秘堡.png" alt="">
+                <p class="name">劍俠特製堡</p>
+                </div>
+                <p class="cart_price">$250</p>
+                <div class="cart_delete">刪除</div>
+            </div>
+            <hr class="cart_main_hr">
+            <div class="cart_main_order3">
+                <img src="img/商品圖/酪梨起司.png" alt="">
+                <p class="name2">葵花寶典堡</p>
+                </div>
+                <p class="cart_price2">$200</p>
+                <div class="cart_delete2">刪除</div>
+
+                <div class="cart_checkout">
+                    <h3>總金額：$</h3>
+                    <h1>450</h1>
+
+                    <input type="submit" value="結帳" id="checkout"
+                        onclick="window.location.href='meals_burger1.html';_self">
+                </div>
+                <hr class="cart_main_hr2">
+
+            </div>
+
+
+
+
+    </header>
+
+
+    <footer>
+        <!-- <img src="img/logo.png" alt="" class="footer_logo"> -->
+        <div class="footer_nav">
+            <ul>
+                <li><a href="meals.html">所有餐點</a></li>
+                <li><a href="order.html">訂單查詢</a></li>
+                <li><a href="news.html">最新消息</a></li>
+                <li><a href="service.html">聯絡我們</a></li>
+            </ul>
+        </div>
+
+        <div class="source">
+            <p class="source_p">客服專線:0800-00-0080
+                客服信箱:0800000080@com.tw/<br>>本網站為緯育TibaMe前端工程師班第91期學員專題作品,本平台僅供學習、展示之用,無販售、商業行為等等。<br>>參考資源:門前隱味、yamahan.tokyo
+                | 圖片影片來源:freepik、pexels、Midjourney、istockphoto</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
