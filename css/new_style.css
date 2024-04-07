@@ -1,0 +1,79 @@
+@import url("reset.css");
+
+/* ---------------- 最新消息內容區塊 ------------------ */
+
+.news{
+    width: 100%;
+}
+
+.news h1{
+    width: 530px;
+    font-size: 42px;
+    color: #313131;
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 400;
+    letter-spacing: 5px;
+    padding-top: 20px;
+    padding-left: 120px;
+    margin-bottom: 20px;
+}
+
+.news_main_1 {
+        /* outline: 2px solid darkblue; */
+        height: 200px;
+        width: 1000px;
+        margin: 0 auto;
+        padding-bottom: 30px;
+        position: relative;
+
+}
+
+.news_main_1 img{
+    width: 200px;
+    border-radius: 10px;
+}
+
+.news_main_font{
+        /* outline: 2px solid darkblue; */
+        width: 850px;
+        position: relative;
+        top: -200px;
+        left: 230px;
+}
+
+.news_main_font h3 {
+    width: 500px;
+    font-size: 22px;
+    margin-bottom: 5px;
+    color: #282828;
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 500;
+    letter-spacing: 5px;
+
+
+}
+
+.news_main_font span {
+    font-size: 12px;
+    color: #838383;
+    overflow: hidden;
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 25px;
+
+}
+
+.news_main_font p {
+    font-size: 17px;
+    color: #282828;
+    overflow: hidden;
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 25px;
+
+}
+

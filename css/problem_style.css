@@ -1,0 +1,57 @@
+@import url("reset.css");
+
+
+/* ---------------- 常見問題內容區塊 ------------------ */
+
+.problem_main{
+    width: 100%;
+}
+
+.problem_main h1{
+    /* outline: 2px solid darkblue; */
+    width: 530px;
+    font-size: 42px;
+    color: #313131;
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 400;
+    letter-spacing: 5px;
+    padding-top: 20px;
+    padding-left: 120px;
+    margin-bottom: 20px;
+
+}
+.problem_main_qa h3 {
+    /* outline: 2px solid darkblue; */
+    width: 500px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #F05E1C;
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 500;
+    letter-spacing: 5px;
+    line-height: 1.2;
+
+}
+
+.problem_main_qa p {
+    /* outline: 2px solid darkblue; */
+    font-size: 16px;
+    color: #838383;
+    overflow: hidden;
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 25px;
+
+}
+
+.problem_main_qa{
+    /* outline: 2px solid darkgreen; */
+    width: 990px;
+    margin: 0 auto;
+    background-color: #ffffffa4;
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
