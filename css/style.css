@@ -129,10 +129,13 @@ footer{
 
 /* ---------------- footer ------------------ */
 
+
+
 .footer_nav{
     /* border: 10px solid sandybrown ; */
     width: 100%;
     margin: 0 auto;
+    margin-top: 50px;
 }
 
 .footer_nav ul{

@@ -634,11 +634,91 @@ hr {
 
 }
 
+
+.img_structure{
+    /* outline:  2px solid rgb(75, 46, 139); */
+    margin: 0 auto;
+    position: absolute;
+    top: 1050px;
+
+}
+
+
+.img_structure img{
+   width: 800px;
+   margin: 0 auto;
+   filter: drop-shadow(20px 30px 10px rgba(0, 0, 0, 0.242));
+}
+
+
+.img_structure1{
+    width: 400px;
+    font-size: 22px;
+    color: #282828;
+    font-family: "Noto Serif TC", serif;
+    font-weight: 600;
+    position: relative;
+    bottom: 600px;
+    left: -20px;
+}
+
+
+.img_structure2{
+    width: 230px;
+    font-size: 22px;
+    color: #282828;
+    font-family: "Noto Serif TC", serif;
+    font-weight: 600;
+    position: relative;
+    bottom: 480px;
+    left: 670px;
+}
+
+
+.img_structure3{
+    width: 230px;
+    font-size: 22px;
+    color: #282828;
+    font-family: "Noto Serif TC", serif;
+    font-weight: 600;
+    position: relative;
+    bottom: 560px;
+    left: 670px;
+}
+
+
+.img_structure4{
+    width: 400px;
+    font-size: 22px;
+    color: #282828;
+    font-family: "Noto Serif TC", serif;
+    font-weight: 600;
+    position: relative;
+    bottom: 510px;
+    left: -20px;
+}
+
+
+.img_structure5{
+    width: 400px;
+    font-size: 22px;
+    color: #282828;
+    font-family: "Noto Serif TC", serif;
+    font-weight: 600;
+    position: relative;
+    bottom: 370px;
+    left: -40px;
+}
+
+
+
+
+
 .burger_main_int4{
     /* outline:  2px solid rgb(97, 6, 27); */
     margin: 0 auto;
     position: relative;
-    top: 110px;
+    top: 750px;
     left: 110px;
 }
 
@@ -673,7 +753,7 @@ hr {
     /* outline:  2px solid rgb(225, 7, 7); */
     margin: 0 auto;
     position: relative;
-    top: 480px;
+    top: 1070px;
     left: -110px;
 }
 
@@ -700,4 +780,200 @@ hr {
     bottom: -110px;
     z-index: 10;
 
+}
+
+/* ---------------- 首頁內容區塊 商品選單 ------------------ */
+
+.main_burger_goods2{
+    padding-top: 780px;
+    display: flex;
+    /* min-width: 100vh; */
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+/* 設定輪播圖 */
+ul.slides{
+    position: relative;
+    width: 100%;;
+    height: 50vh;
+    /* background-color: gray; */
+    overflow: hidden;
+    padding-bottom: 50px;
+
+}
+
+li.slide{
+    /* inherit繼層父層的高寬 */
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    /* 轉場的動畫 */
+    transition: .5s transform ease-in-out;
+}
+
+/* 輪播選擇器 */
+.slide:nth-last-of-type(1){
+    background-image: url(../img/商品圖/大滿貫.png);
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 400px;
+    /* 設定商品的位置 */
+    left: 30px;
+    
+}
+.slide:nth-last-of-type(2){
+    background-image: url(../img/商品圖/酪梨起司.png);
+    width: 400px;
+    height: 400px;
+    left: 800px;
+}
+.slide:nth-last-of-type(3){
+    background-image: url(../img/商品圖/暗夜神秘堡.png);
+    width: 400px;
+    height: 400px;
+    left: 400px;
+    
+}
+.slide:nth-last-of-type(4){
+    background-image: url(../img/商品圖/經典美式.png);
+    width: 400px;
+    height: 400px;
+    left: 1210px;
+    
+
+}
+.slide:nth-last-of-type(5){
+    background-image: url(../img/商品圖/起司豬肉.png);
+    width: 400px;
+    height: 400px;
+    left: 1610px;
+    
+
+}
+.slide:nth-last-of-type(6){
+    background-image: url(../img/商品圖/鳳梨豬.png);
+    width: 400px;
+    height: 400px;
+    left: 2000px;
+    
+
+}
+
+/* 輪播按鈕選擇器 */
+input[type="radio"]{
+    position: relative;
+    z-index: 100;
+    display: none;
+
+}
+
+.controls-visible{
+    position: absolute;
+    width: 100%;
+    bottom: 12px;
+    text-align: center;
+
+
+}
+/* 修改形狀 */
+.controls-visible label{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 50px; 
+    margin: 0 3px;
+    border: 2px solid #F05E1C;
+
+}
+/* 設定被選中的按鈕呈現 */
+.slides input[type="radio"]:nth-of-type(1):checked ~ .controls-visible label:nth-of-type(1) {
+    background-color: #F05E1C;
+}
+
+.slides input[type="radio"]:nth-of-type(2):checked ~ .controls-visible label:nth-of-type(2) {
+    background-color: #F05E1C;
+}
+
+.slides input[type="radio"]:nth-of-type(3):checked ~ .controls-visible label:nth-of-type(3) {
+    background-color: #F05E1C;
+}
+
+.slides input[type="radio"]:nth-of-type(4):checked ~ .controls-visible label:nth-of-type(4) {
+    background-color: #F05E1C;
+}
+
+.slides input[type="radio"]:nth-of-type(5):checked ~ .controls-visible label:nth-of-type(5) {
+    background-color: #F05E1C;
+}
+
+.slides input[type="radio"]:nth-of-type(6):checked ~ .controls-visible label:nth-of-type(6) {
+    background-color: #F05E1C;
+}
+
+
+/* 切換平移 */
+.slides input[type="radio"]:nth-of-type(1):checked ~ .slide {
+    transform: translateX(0%);
+}
+
+.slides input[type="radio"]:nth-of-type(2):checked ~ .slide {
+    transform: translateX(-100%);
+}
+
+.slides input[type="radio"]:nth-of-type(3):checked ~ .slide {
+    transform: translateX(-200%);
+}
+
+.slides input[type="radio"]:nth-of-type(4):checked ~ .slide {
+    transform: translateX(-300%);
+}
+
+.slides input[type="radio"]:nth-of-type(5):checked ~ .slide {
+    transform: translateX(-440%);
+}
+
+.slides input[type="radio"]:nth-of-type(6):checked ~ .slide {
+    transform: translateX(-500%);
+}
+
+/* 設定商品自身的超連結 */
+.slide1{
+    display: block;
+    width: 300px;
+    height: 300px;
+}
+.slide2{
+    display: block;
+    width: 300px;
+    height: 300px;
+}
+.slide3{
+    display: block;
+    width: 300px;
+    height: 300px;
+}
+.slide4{
+    display: block;
+    width: 300px;
+    height: 300px;
+}
+.slide5{
+    display: block;
+    width: 300px;
+    height: 300px;
+}
+.slide6{
+    display: block;
+    width: 300px;
+    height: 300px;
 }

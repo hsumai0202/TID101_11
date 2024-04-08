@@ -272,7 +272,7 @@
 .cart_checkout{
     /* outline: 2px solid darkblue; */
     width: 200px;
-    position: relative;
+    position: absolute;
     left: 770px;
 }
 
@@ -307,6 +307,10 @@
     border: 0px;
     color: #fff;
     line-height: 40px;
+
+    position: relative;
+    left: 0px;
+    bottom: 22px;
 }
 
 #checkout:hover{
@@ -877,6 +881,7 @@ li .warning{
     width: 860px;
     background-color: #83838337;
     border-radius: 20px;
+
     position: relative;
     top: 40px;
 }
