@@ -1,0 +1,539 @@
+@import url("reset.css");
+
+/* ---------------- top 影片區 ------------------ */
+
+.voideo_box{
+    /* outline: 10px solid gold; */
+    height: 70vh;
+    margin: 20px;
+    overflow: hidden;
+
+}
+
+
+video{
+    width: 100%;
+    height: auto;
+}
+
+/* ---------------- 首頁內容區塊 ------------------ */
+
+.main{
+    margin: 0 auto;
+    width: 100%;
+
+}
+.index_about{
+    height: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+    /* position: relative; */
+
+}
+
+/* 吃漢堡的圖 */
+.main_img1{
+    position: relative;
+    /* overflow: hidden; */
+    filter: drop-shadow(20px 50px 10px rgba(0, 0, 0, 0.242));
+    /* 上右下左 */
+    padding: 0px 0 0 50px;
+    width: 500px;
+    
+
+}
+
+.index_about h1{
+    width: 530px;
+    font-size: 42px;
+    color: #313131;
+    font-family: "Noto Serif TC", serif;
+    font-weight: 400;
+    letter-spacing: 5px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    /* 定位 */
+    position: relative;
+    bottom: 400px;
+    left: 600px;
+}
+
+.index_about p{
+    width: 530px;
+    font-size: 16px;
+    color: #313131;
+    overflow: hidden;
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 25px;
+    /* 定位 */
+    position: relative;
+    bottom: 400px;
+    left: 600px;
+}
+
+
+/* 漢堡情境圖 */
+.main_img3{
+    width: 100%;
+    /* 圖片下面出現多的空白 */
+    display: block;
+
+}
+
+/* 絞肉圖 */
+.main_img4{
+    width: 100%;
+    display: block;
+}
+
+
+/* ---------------- 首頁內容區塊 食材介紹 ------------------ */
+
+.about{
+    background: #000000e7;
+    width: 100%;
+    height: 800px;
+}
+
+/* 肉排介紹 */
+.main_about{
+    padding-top: 50px;
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.main_about_video {
+    width: 40vw;
+
+}
+.about_video{
+    width: 100%;
+    height: auto;
+    /* 上右下左 */
+    padding: 0 0 0 50px;
+    position: relative;
+
+
+}
+
+.main_about_video h1{
+    width: 500px;
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-family: "Noto Serif TC", serif;
+    font-weight: 400;
+    letter-spacing: 5px;
+    /* 定位 */
+    position: relative;
+    bottom: 290px;
+    left: 600px;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.685);
+
+
+
+}
+
+.main_about_video p{
+    width: 500px;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 25px;
+    /* 定位 */
+    position: relative;
+    bottom: 290px;
+    left: 600px;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.242);
+
+
+}
+
+
+/* 肉排照 */
+.main_img5{
+    width: 500px;
+    margin: 90px 50px 0 0;
+    background-color: #fff;
+    position: relative;
+    left: 590px;
+    bottom: 290px;
+    filter: drop-shadow(-20px 50px 10px rgba(0, 0, 0, 0.242));
+
+}
+
+/* 蔬菜介紹 */
+.main_about_material{
+    background: #000000e7;
+    width: 100%;
+    height: 700px;
+    
+}
+
+.about_material{
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+
+.main_about_material h1{
+    width: 500px;
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-family: "Noto Serif TC", serif;
+    font-weight: 400;
+    letter-spacing: 5px;
+    padding-left: 100px;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.685);
+
+    
+
+}
+
+.main_about_material p{
+    width: 900px;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 25px;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.242);
+    padding-left: 100px;
+    padding-bottom: 20px;
+
+}
+
+/* 蔬菜照 */
+.main_img6{
+    display: block;
+    width: 90%;
+    filter: drop-shadow(10px 50px 10px rgba(0, 0, 0, 0.242));
+    margin: 0 auto;
+}
+
+/* ---------------- 首頁內容區塊 商品選單 ------------------ */
+
+.main_burger_goods{
+    padding-top: 200px;
+    display: flex;
+    /* min-width: 100vh; */
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+/* 設定輪播圖 */
+ul.slides{
+    position: relative;
+    width: 100%;;
+    height: 50vh;
+    /* background-color: gray; */
+    overflow: hidden;
+    padding-bottom: 50px;
+
+}
+
+li.slide{
+    /* inherit繼層父層的高寬 */
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    /* 轉場的動畫 */
+    transition: .5s transform ease-in-out;
+}
+
+/* 輪播選擇器 */
+.slide:nth-last-of-type(1){
+    background-image: url(../img/商品圖/大滿貫.png);
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 400px;
+    /* 設定商品的位置 */
+    left: 30px;
+    
+}
+.slide:nth-last-of-type(2){
+    background-image: url(../img/商品圖/酪梨起司.png);
+    width: 400px;
+    height: 400px;
+    left: 800px;
+}
+.slide:nth-last-of-type(3){
+    background-image: url(../img/商品圖/暗夜神秘堡.png);
+    width: 400px;
+    height: 400px;
+    left: 400px;
+    
+}
+.slide:nth-last-of-type(4){
+    background-image: url(../img/商品圖/經典美式.png);
+    width: 400px;
+    height: 400px;
+    left: 1210px;
+    
+
+}
+.slide:nth-last-of-type(5){
+    background-image: url(../img/商品圖/起司豬肉.png);
+    width: 400px;
+    height: 400px;
+    left: 1610px;
+    
+
+}
+.slide:nth-last-of-type(6){
+    background-image: url(../img/商品圖/鳳梨豬.png);
+    width: 400px;
+    height: 400px;
+    left: 2000px;
+    
+
+}
+
+/* 輪播按鈕選擇器 */
+input[type="radio"]{
+    position: relative;
+    z-index: 100;
+    display: none;
+
+}
+
+.controls-visible{
+    position: absolute;
+    width: 100%;
+    bottom: 12px;
+    text-align: center;
+
+
+}
+/* 修改形狀 */
+.controls-visible label{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 50px; 
+    margin: 0 3px;
+    border: 2px solid #F05E1C;
+
+}
+/* 設定被選中的按鈕呈現 */
+.slides input[type="radio"]:nth-of-type(1):checked ~ .controls-visible label:nth-of-type(1) {
+    background-color: #F05E1C;
+}
+
+.slides input[type="radio"]:nth-of-type(2):checked ~ .controls-visible label:nth-of-type(2) {
+    background-color: #F05E1C;
+}
+
+.slides input[type="radio"]:nth-of-type(3):checked ~ .controls-visible label:nth-of-type(3) {
+    background-color: #F05E1C;
+}
+
+.slides input[type="radio"]:nth-of-type(4):checked ~ .controls-visible label:nth-of-type(4) {
+    background-color: #F05E1C;
+}
+
+.slides input[type="radio"]:nth-of-type(5):checked ~ .controls-visible label:nth-of-type(5) {
+    background-color: #F05E1C;
+}
+
+.slides input[type="radio"]:nth-of-type(6):checked ~ .controls-visible label:nth-of-type(6) {
+    background-color: #F05E1C;
+}
+
+
+/* 切換平移 */
+.slides input[type="radio"]:nth-of-type(1):checked ~ .slide {
+    transform: translateX(0%);
+}
+
+.slides input[type="radio"]:nth-of-type(2):checked ~ .slide {
+    transform: translateX(-100%);
+}
+
+.slides input[type="radio"]:nth-of-type(3):checked ~ .slide {
+    transform: translateX(-200%);
+}
+
+.slides input[type="radio"]:nth-of-type(4):checked ~ .slide {
+    transform: translateX(-300%);
+}
+
+
+
+/* 設定商品自身的超連結 */
+.slide1{
+    display: block;
+    width: 300px;
+    height: 300px;
+}
+.slide2{
+    display: block;
+    width: 300px;
+    height: 300px;
+}
+.slide3{
+    display: block;
+    width: 300px;
+    height: 300px;
+}
+.slide4{
+    display: block;
+    width: 300px;
+    height: 300px;
+}
+.slide5{
+    display: block;
+    width: 300px;
+    height: 300px;
+}
+.slide6{
+    display: block;
+    width: 300px;
+    height: 300px;
+}
+
+/* ---------------- 三大承諾內容區塊 ------------------ */
+
+.about_main{
+    width: 100%;
+}
+
+.about_main h1{
+    /* outline: 2px solid darkblue; */
+    width: 530px;
+    font-size: 42px;
+    color: #313131;
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 400;
+    letter-spacing: 5px;
+    padding-top: 20px;
+    padding-left: 120px;
+    margin-bottom: 20px;
+
+}
+/* 肉的介紹 */
+.about_main_1{
+    /* outline: 2px solid darkblue; */
+    background-color: #ffaa001a;
+    margin: 40px;
+    width: 1000px;
+    height: 790px;
+    border-radius: 20px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 50px;
+
+}
+
+.about_img1{
+    width: 900px;
+    border-radius: 20px;
+    margin: 0 auto;
+    position: relative;
+    top: 30px;
+    left: 55px;    
+}
+
+.about_img2{
+    width: 300px;
+    border-radius: 20px;
+    position: relative;
+    top: 60px;
+    left: 55px;  
+    filter: drop-shadow(10px 10px 10px rgba(67, 47, 3, 0.242));
+}
+
+.about_main_font{
+    /* outline: 2px solid darkblue; */
+    width: 500px;
+    position: relative;
+    bottom: 240px;
+    left: 390px;
+}
+
+.about_main_font h2 {
+    /* outline: 2px solid darkblue; */
+    width: 500px;
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #282828;
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 400;
+    letter-spacing: 5px;
+    line-height: 1.2;
+
+}
+
+
+.about_main_font p {
+    /* outline: 2px solid darkblue; */
+    width: 550px;
+    font-size: 16px;
+    color: #313131;
+    overflow: hidden;
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 25px;
+
+}
+
+/* 蔬菜的介紹 */
+.about_img3{
+    width: 900px;
+    border-radius: 20px;
+    margin: 0 auto;
+    position: relative;
+    top: 30px;
+    left: 55px;    
+}
+
+.about_img4{
+    width: 300px;
+    border-radius: 20px;
+    position: relative;
+    top: 60px;
+    left: 55px;  
+    filter: drop-shadow(10px 10px 10px rgba(67, 47, 3, 0.242));
+}
+
+/* 蔬菜的介紹 */
+.about_img5{
+    width: 900px;
+    border-radius: 20px;
+    margin: 0 auto;
+    position: relative;
+    top: 30px;
+    left: 55px;    
+}
+
+.about_img6{
+    width: 300px;
+    border-radius: 20px;
+    position: relative;
+    top: 60px;
+    left: 55px;  
+    filter: drop-shadow(10px 10px 10px rgba(67, 47, 3, 0.242));
+}
