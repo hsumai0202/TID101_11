@@ -10,10 +10,25 @@
 
 }
 
-
 video{
     width: 100%;
     height: auto;
+}
+
+
+.more:after{
+    background-image: url("../img/arrow.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: 6em;
+    content: '';
+    display: block;
+    height: 1.5em;
+    left: 50%;
+    margin: 0 0 0 -0.75em;
+    position: absolute;
+    width: 1.5em;
 }
 
 /* ---------------- 首頁內容區塊 ------------------ */
@@ -29,6 +44,8 @@ video{
     margin: 0 auto;
     margin-top: 50px;
     /* position: relative; */
+    transform-style: preserve-3d
+
 
 }
 
@@ -40,7 +57,7 @@ video{
     /* 上右下左 */
     padding: 0px 0 0 150px;
     width: 540px;
-    
+    z-index: 2;
 
 }
 
@@ -75,6 +92,24 @@ video{
     left: 720px;
 }
 
+.ani_p p{
+    /* outline: 1px solid rgb(0, 102, 255); */
+    margin: 0 auto;
+    font-size: 120px;
+    font-family: "Mochiy Pop One", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: #ffffff74;
+    position: relative;
+    top: 390px;
+    left: 0px;
+
+}
+
+.main_img2{
+    height: 95vh;
+    overflow: hidden;
+}
 
 /* 漢堡情境圖 */
 .main_img3{
@@ -84,11 +119,6 @@ video{
 
 }
 
-/* 絞肉圖 */
-.main_img4{
-    width: 100%;
-    display: block;
-}
 
 
 /* ---------------- 首頁內容區塊 食材介紹 ------------------ */
@@ -225,16 +255,44 @@ video{
 
 /* ---------------- 動畫設定區域 ------------------ */
 
+/* 吃漢堡區塊 */
 .ani_img {
     opacity: 0;
-    transition: all 1s;
-    transform: translateY(1em);
-  }
-  
-  .ani_img.ed {
+    transition: all 2s;
+    transform: translateY(2em);
+    /* transform: rotateZ('1'); */
+    animation:1.2s .4s ease-in-out forwards
+
+}
+
+.ani_img.ed {
     opacity: 1;
     transform: translateY(0em);
-  }
+    z-index: 1;
+}
+/* 漢堡圖文字區塊 */
+
+
+.ani_p p{
+    animation: smoky 5s ;
+    animation-iteration-count: infinite;
+}
+
+/* filter模糊 */
+@keyframes smoky {
+    0% {
+    letter-spacing: -1.5em;
+    filter: blur(12px);
+    opacity: 0;
+    }
+    100% {
+    letter-spacing: .05em;
+    filter: blur(0px);
+    opacity: 1;
+    }
+}
+
+
 
 /* ---------------- 三大承諾內容區塊 ------------------ */
 
