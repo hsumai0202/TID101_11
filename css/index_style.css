@@ -210,8 +210,38 @@ video{
     left: 590px;
     bottom: 290px;
     filter: drop-shadow(-20px 50px 10px rgba(0, 0, 0, 0.242));
+    z-index: 5;
 
 }
+
+
+.main_img5:hover {
+    display: block;
+    cursor:pointer;
+    transition: .5s;
+    opacity: 0;
+}
+
+.mainvoideo_box {
+    /* outline: 2px solid firebrick; */
+    width: 35vw;
+    position: relative;
+    left: 590px;
+    bottom: 790px;
+
+}
+.meat_video{
+    width: 100%;
+    height: auto;
+    position: relative;
+
+}
+
+
+
+
+
+
 
 /* 蔬菜介紹 */
 .main_about_material{
