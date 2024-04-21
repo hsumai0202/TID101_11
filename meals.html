@@ -8,18 +8,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/meals_style.css">
     <!-- 載入font icon -->
-    <script src="https://kit.fontawesome.com/1h177a75cd75.js" crossorigin="anonymous"></script>
-    <!-- 載入google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css1h1?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-    <!-- 載入google font icon -->
-    <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,1,0" />
-        <!-- 分頁 icon -->
-        <link rel="icon" type="imge/png" sizes="32x32" href="img/iocn.png" />
+    <script src="https://kit.fontawesome.com/277a75cd75.js" crossorigin="anonymous"></script>
+    <!-- 分頁 icon -->
+    <link rel="icon" type="imge/png" sizes="32x32" href="img/iocn.png" />
 
     <title>大俠漢堡堡</title>
 </head>
@@ -44,10 +35,8 @@
             <!-- nav icon -->
             <div class="all_icon">
                 <ul>
-                <!-- 會員 -->
-                <li class="person"><a href=""><span class="material-symbols-outlined" style="color:#F05E1C;">person</span></a></li>
-                <!-- 購物車 -->
-                <li class="shopping_cart"  ><a href="cart.html"><span class="material-symbols-outlined" style="color:#F05E1C;" >shopping_cart</span></a></li>
+                    <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                    <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -59,246 +48,67 @@
                     <li>
                         <!-- hover效果 所以要多包一成div在img上 -->
                         <!--  -->
-                        <div id="divchpic01" onclick="window.location.href='meals_burger1.html';_self" >
-                        <a href="meals_burger1.html" title=""></a> </div>
+                        <div id="divchpic01" onclick="window.location.href='meals_burger1.html';_self">
+                            <a href="meals_burger1.html" title=""></a>
+                        </div>
                         <a class="h2" href="meals_burger1.html">劍俠特製堡</a>
                         <h3>$250</h3>
-                        <button id="shopp" type="button">加入購物車</button>
-                        <!-- 數量鍵 -->
-                        <div class="piece">
-                            <!-- 减少 -->
-                            <button onclick="decrement()">-</button>
-
-                            <!-- 輸入框 -->
-                            <input type="text" id="quantity" value="1">
-
-                            <!-- 增加 -->
-                            <button onclick="increment()">+</button>
-                        </div>
+                        <button id="shopp" type="button"
+                            onclick="window.location.href='meals_burger1.html';_self">加入購物車</button>
 
                     </li>
 
                     <li>
-                        <a href="meals_burger1.html" title=""><img src="img/商品圖/大滿貫2.png"></a>
+                        <div id="divchpic02" onclick="window.location.href='meals_burger1.html';_self">
+                            <a href="meals_burger1.html" title=""></a>
+                        </div>
                         <a class="h2" href="meals_burger1.html">岳飛獅子吼堡</a>
                         <h3>$200</h3>
-                        <button id="shopp" type="button">加入購物車</button>
-                        <!-- 數量鍵 -->
-                        <div class="piece">
-                            <!-- 减少 -->
-                            <button onclick="decrement()">-</button>
-
-                            <!-- 輸入框 -->
-                            <input type="text" id="quantity" value="1">
-
-                            <!-- 增加 -->
-                            <button onclick="increment()">+</button>
-
-                            <script>
-                                // 宣告輸入框
-                                var quantityInput = document.getElementById('quantity');
-
-                                // 減少數量
-                                function decrement() {
-                                    // 宣告目前的數量
-                                    var currentValue = parseInt(quantityInput.value);
-
-                                    // 如果大於1，可以減少，-1
-                                    if (currentValue > 1) {
-                                        quantityInput.value = currentValue - 1;
-                                    }
-                                }
-
-                                // 增加數量
-                                function increment() {
-                                    // 宣告目前的數量
-                                    var currentValue = parseInt(quantityInput.value);
-
-                                    // 目前的數量 
-                                    quantityInput.value = currentValue + 1;
-                                }
-                            </script>
-                        </div>
+                        <button id="shopp" type="button"
+                        onclick="window.location.href='meals_burger1.html';_self">加入購物車</button>
 
                     </li>
                     <li>
-                        <a href="meals_burger1.html" title=""><img src="img/商品圖/起司豬肉2.png"></a>
+                        <div id="divchpic03" onclick="window.location.href='meals_burger1.html';_self">
+                            <a href="meals_burger1.html" title=""></a>
+                        </div>
                         <a class="h2" href="meals_burger1.html">太極掌漢堡</a>
                         <h3>$160</h3>
-                        <button id="shopp" type="button">加入購物車</button>
-                        <!-- 數量鍵 -->
-                        <div class="piece">
-                            <!-- 减少 -->
-                            <button onclick="decrement()">-</button>
-
-                            <!-- 輸入框 -->
-                            <input type="text" id="quantity" value="1">
-
-                            <!-- 增加 -->
-                            <button onclick="increment()">+</button>
-
-                            <script>
-                                // 宣告輸入框
-                                var quantityInput = document.getElementById('quantity');
-
-                                // 減少數量
-                                function decrement() {
-                                    // 宣告目前的數量
-                                    var currentValue = parseInt(quantityInput.value);
-
-                                    // 如果大於1，可以減少，-1
-                                    if (currentValue > 1) {
-                                        quantityInput.value = currentValue - 1;
-                                    }
-                                }
-
-                                // 增加數量
-                                function increment() {
-                                    // 宣告目前的數量
-                                    var currentValue = parseInt(quantityInput.value);
-
-                                    // 目前的數量 Ａ＋＋
-                                    quantityInput.value = currentValue + 1;
-                                }
-                            </script>
-                        </div>
+                        <button id="shopp" type="button"
+                            onclick="window.location.href='meals_burger1.html';_self">加入購物車</button>
 
                     </li>
                     <li>
-                        <a href="meals_burger1.html" title=""> <img src="img/商品圖/酪梨起司2.png"></a>
+                        <div id="divchpic04" onclick="window.location.href='meals_burger1.html';_self">
+                            <a href="meals_burger1.html" title=""></a>
+                        </div>
                         <a class="h2" href="meals_burger1.html">葵花寶典堡</a>
                         <h3>$200</h3>
-                        <button id="shopp" type="button">加入購物車</button>
-                        <!-- 數量鍵 -->
-                        <div class="piece">
-                            <!-- 减少 -->
-                            <button onclick="decrement()">-</button>
-
-                            <!-- 輸入框 -->
-                            <input type="text" id="quantity" value="1">
-
-                            <!-- 增加 -->
-                            <button onclick="increment()">+</button>
-
-                            <script>
-                                // 宣告輸入框
-                                var quantityInput = document.getElementById('quantity');
-
-                                // 減少數量
-                                function decrement() {
-                                    // 宣告目前的數量
-                                    var currentValue = parseInt(quantityInput.value);
-
-                                    // 如果大於1，可以減少，-1
-                                    if (currentValue > 1) {
-                                        quantityInput.value = currentValue - 1;
-                                    }
-                                }
-
-                                // 增加數量
-                                function increment() {
-                                    // 宣告目前的數量
-                                    var currentValue = parseInt(quantityInput.value);
-
-                                    // 目前的數量 Ａ＋＋
-                                    quantityInput.value = currentValue + 1;
-                                }
-                            </script>
-                        </div>
-
+                        <button id="shopp" type="button"
+                            onclick="window.location.href='meals_burger1.html';_self">加入購物車</button>
                     </li>
                     <li>
-                        <a href="meals_burger1.html" title=""><img src="img/商品圖/鳳梨豬2.png"></a>
+                        <div id="divchpic05" onclick="window.location.href='meals_burger1.html';_self">
+                            <a href="meals_burger1.html" title=""></a>
+                        </div>
                         <a class="h2" href="meals_burger1.html">鳳凰展翅堡</a>
                         <h3>$160</h3>
-                        <button id="shopp" type="button">加入購物車</button>
-                        <!-- 數量鍵 -->
-                        <div class="piece">
-                            <!-- 减少 -->
-                            <button onclick="decrement()">-</button>
-
-                            <!-- 輸入框 -->
-                            <input type="text" id="quantity" value="1">
-
-                            <!-- 增加 -->
-                            <button onclick="increment()">+</button>
-
-                            <script>
-                                // 宣告輸入框
-                                var quantityInput = document.getElementById('quantity');
-
-                                // 減少數量
-                                function decrement() {
-                                    // 宣告目前的數量
-                                    var currentValue = parseInt(quantityInput.value);
-
-                                    // 如果大於1，可以減少，-1
-                                    if (currentValue > 1) {
-                                        quantityInput.value = currentValue - 1;
-                                    }
-                                }
-
-                                // 增加數量
-                                function increment() {
-                                    // 宣告目前的數量
-                                    var currentValue = parseInt(quantityInput.value);
-
-                                    // 目前的數量 Ａ＋＋
-                                    quantityInput.value = currentValue + 1;
-                                }
-                            </script>
-                        </div>
+                        <button id="shopp" type="button"
+                            onclick="window.location.href='meals_burger1.html';_self">加入購物車</button>
 
                     </li>
                     <li>
-                        <a href="meals_burger1.html" title=""><img src="img/商品圖/經典美式2.png"></a>
+                        <div id="divchpic06" onclick="window.location.href='meals_burger1.html';_self">
+                            <a href="meals_burger1.html" title=""></a>
+                        </div>
                         <a class="h2" href="meals_burger1.html">忠義勇者堡</a>
                         <h3>$150</h3>
-                        <button id="shopp" type="button">加入購物車</button>
-                        <!-- 數量鍵 -->
-                        <div class="piece">
-                            <!-- 减少 -->
-                            <button onclick="decrement()">-</button>
-
-                            <!-- 輸入框 -->
-                            <input type="text" id="quantity" value="1">
-
-                            <!-- 增加 -->
-                            <button onclick="increment()">+</button>
-
-                            <script>
-                                // 宣告輸入框
-                                var quantityInput = document.getElementById('quantity');
-
-                                // 減少數量
-                                function decrement() {
-                                    // 宣告目前的數量
-                                    var currentValue = parseInt(quantityInput.value);
-
-                                    // 如果大於1，可以減少，-1
-                                    if (currentValue > 1) {
-                                        quantityInput.value = currentValue - 1;
-                                    }
-                                }
-
-                                // 增加數量
-                                function increment() {
-                                    // 宣告目前的數量
-                                    var currentValue = parseInt(quantityInput.value);
-
-                                    // 目前的數量 Ａ＋＋
-                                    quantityInput.value = currentValue + 1;
-                                }
-                            </script>
-                        </div>
+                        <button id="shopp" type="button"
+                            onclick="window.location.href='meals_burger1.html';_self">加入購物車</button>
 
                     </li>
-
-
                 </ul>
             </div>
-
-
         </div>
 
 
