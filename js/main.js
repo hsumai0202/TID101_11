@@ -14,8 +14,8 @@ function addClassToVisibleElements() {
     {
         // 如果有判定到.ani_img的元素 就添加上ed元素
         if (!isElementInViewport(aniElements)) aniElements.classList.add("ed")
-        // 如果沒有判定到，就移除ed元素
-        else aniElements.classList.remove("ed")
+        // 如果沒有判定到，就加入ani_img 來維持原本的元素，才不會一直被偵測到
+        else aniElements.classList.add("ani_img")
 
     });
 

@@ -140,11 +140,11 @@ footer{
     
     display: block;
     color: #FFA800;
-    font-size: 30px;
+    font-size: 25px;
     position: fixed;
     /* position: relative; */
-    right: 80px;
-    top: 50px;
+    right: 45px;
+    top: 25px;
     z-index: 1;
 }
 
@@ -154,12 +154,12 @@ footer{
     text-decoration: none;
     display: block;
     color: #FFA800;
-    font-size: 30px;
+    font-size: 25px;
     position: fixed;
     /* position: relative; */
-    right: 30px;
-    top: 50px;
-    z-index: 1;
+    right: 10px;
+    top: 25px;
+
 }
 
 
