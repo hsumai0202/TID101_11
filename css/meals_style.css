@@ -442,6 +442,14 @@
     left: 410px;
     /* 去除自帶的陰影 */
     border:none;
+    /* 滑鼠游標 */
+    cursor:pointer;
+}
+
+
+#shoppcart:hover{
+    background: #FFA800;
+    color: #fff;
 }
 
 /* 直接結帳 */
@@ -480,7 +488,8 @@ hr {
 /* ---------------- 產品介紹區塊 ------------------ */
 .burger_main_int2 {
     /* outline:  2px solid rgb(75, 46, 139); */
-    height: 1200px;
+    /* background-color: #282828; */
+    height: 1920px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -501,7 +510,7 @@ hr {
     margin: 0 auto;
     position: relative;
     border-radius: 20px ;
-    filter: drop-shadow(20px 30px 10px rgba(0, 0, 0, 0.242));
+    /* filter: drop-shadow(20px 30px 10px rgba(0, 0, 0, 0.242)); */
 }
 
 .burger_main_int3 h1{
@@ -619,7 +628,7 @@ hr {
     /* outline:  2px solid rgb(97, 6, 27); */
     margin: 0 auto;
     position: relative;
-    top: 750px;
+    top: 360px;
     left: 110px;
 }
 
@@ -629,7 +638,7 @@ hr {
     width: 500px;
     margin: 0 auto;
     border-radius: 20px ;
-    filter: drop-shadow(20px 30px 10px rgba(0, 0, 0, 0.242));
+    /* filter: drop-shadow(20px 30px 10px rgba(0, 0, 0, 0.242)); */
 }
 
 
@@ -654,7 +663,7 @@ hr {
     /* outline:  2px solid rgb(225, 7, 7); */
     margin: 0 auto;
     position: relative;
-    top: 1070px;
+    top: 680px;
     left: -110px;
 }
 
@@ -664,7 +673,7 @@ hr {
     width: 500px;
     margin: 0 auto;
     border-radius: 20px ;
-    filter: drop-shadow(-20px 30px 10px rgba(0, 0, 0, 0.242));
+    /* filter: drop-shadow(-20px 30px 10px rgba(0, 0, 0, 0.242)); */
 }
 
 
@@ -705,4 +714,28 @@ hr {
 
 .fa-burger, .fa-house{
     color: #F05E1C;
+}
+
+/* ---------------- 動畫設定區域 ------------------ */
+
+.ani_img {
+    opacity: 0;
+    transition: all 5s;
+    transform: translateY(10em);
+    /* transform: rotateZ('1'); */
+    animation:1.2s .4s ease-in-out forwards
+
+}
+
+.ani_img.ed {
+    opacity: 1;
+    transform: translateY(0em);
+    z-index: 1;
+}
+
+
+.img_structure > p:hover{
+    color: #F05E1C;
+    transform: scale(1.2);
+
 }

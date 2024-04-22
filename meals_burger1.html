@@ -7,10 +7,16 @@
     <!-- 載入CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/meals_style.css">
+    <!-- 載入Jq -->
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/meals.js"></script>
     <!-- 載入font icon -->
     <script src="https://kit.fontawesome.com/277a75cd75.js" crossorigin="anonymous"></script>
     <!-- 分頁 icon -->
     <link rel="icon" type="imge/png" sizes="32x32" href="img/iocn.png" />
+    <!-- Swiper 套件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script>
         // 宣告輸入框
         var quantityInput = document.getElementById('quantity');
@@ -141,7 +147,7 @@
                 </div>
 
 
-                <div class="img_structure">
+                <div class="img_structure ani_img">
                     <img src="img/商品圖/暗夜神秘堡3.png" alt="">
                     <p class="img_structure1">植物碳麵包______</p>
                     <p class="img_structure2">______手工炭烤豬肉餅</p>
@@ -149,10 +155,6 @@
                     <p class="img_structure4">特製秘密醬汁______</p>
                     <p class="img_structure5">生菜番茄______</p>
                 </div>
-
-
-
-
 
 
                 <div class="burger_main_int4">
@@ -171,39 +173,51 @@
             </div>
 
             <!--  商品區  -->
-            <div class="main_burger_goods2">
-                <ul class="slides">
-                    <input type="radio" id="control-1" name="control" checked>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- <input type="radio" id="control-1" name="control" checked>
                     <input type="radio" id="control-2" name="control">
                     <input type="radio" id="control-3" name="control">
-                    <input type="radio" id="control-4" name="control">
+                    <input type="radio" id="control-4" name="control"> -->
 
                     <!-- 商品本身 -->
-                    <li class="slide"><a class="slide6" href="meals_burger1.html"></a></li>
-                    <li class="slide"><a class="slide5" href="meals_burger1.html"></a></li>
-                    <li class="slide"><a class="slide4" href="meals_burger1.html"></a></li>
-                    <li class="slide"><a class="slide3" href="meals_burger1.html"></a></li>
-                    <li class="slide"><a class="slide2" href="meals_burger1.html"></a></li>
-                    <li class="slide"><a class="slide1" href="meals_burger1.html"></a></li>
+                    <div class="swiper-slide">
+                        <a class="slide6" href="meals_burger1.html"><img src="img/商品圖/大滿貫.png" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="slide6" href="meals_burger1.html"><img src="img/商品圖/暗夜神秘堡.png" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="slide6" href="meals_burger1.html"><img src="img/商品圖/酪梨起司.png" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="slide6" href="meals_burger1.html"><img src="img/商品圖/經典美式.png" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="slide6" href="meals_burger1.html"><img src="img/商品圖/起司豬肉.png" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="slide6" href="meals_burger1.html"><img src="img/商品圖/鳳梨豬.png" alt=""></a>
+                    </div>
+
 
                     <!-- 輪播按鈕 -->
-                    <div class="controls-visible">
-                        <label for="control-1"></label>
+                    <!-- <div class="controls-visible">
+                        <button class="btn btn-left">&larr;</button>
+                        <button class="btn btn-next">&rarr;</button> -->
+                    <!-- <label for="control-1"></label>
                         <label for="control-2"></label>
                         <label for="control-3"></label>
-                        <label for="control-4"></label>
+                        <label for="control-4"></label> -->
 
-                    </div>
-                </ul>
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
-
-
         </div>
 
 
 
-
-
+        </div>
     </header>
 
 
@@ -225,6 +239,22 @@
         </div>
 
     </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            freeMode: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 
 </html>

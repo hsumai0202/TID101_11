@@ -23,3 +23,5 @@ function addClassToVisibleElements() {
 // 當滑動時就跑 addClassToVisibleElements這函數
 document.addEventListener("scroll", addClassToVisibleElements);
 addClassToVisibleElements();
+
+
