@@ -1,0 +1,238 @@
+@media screen and (max-width: 1330px) {
+    .main_img1{
+        padding: 0px 0 0 70px;
+    }
+
+    .index_about h1, .index_about p{
+        left: 630px;
+    }
+
+    .main_img5{
+        width: 474px;
+        bottom: 321px;
+    }
+
+    .main_about_video{
+        width: 45vw;
+    }
+
+}
+
+@media screen and (max-width: 1270px) {
+    .main_img1{
+        padding: 0px 0 0 70px;
+    }
+
+    .index_about h1, .index_about p{
+        left: 630px;
+    }
+
+    .main_about_video h1, .main_about_video p{
+        left: 560px;
+    }
+
+    .mainvoideo_box{
+        width: 37vw;
+        bottom: 795px;
+    }
+
+}
+
+@media screen and (max-width: 1230px) {
+    .main_about{
+        width: 100%;
+    }
+    .index_about h1{
+        font-size: 42px;
+    }
+    .index_about h1, .index_about p{
+        width: 550px;
+        left: 600px;
+    }
+    .main_img1{
+        width: 500px;
+    }
+
+    .all_logo{
+        margin:14px 0 0 11px;
+    }
+    .all_nav li{
+        margin: 10px;
+    }
+
+}
+
+
+@media screen and (max-width: 1170px) {
+    .main_about{
+        width: 100%;
+    }
+    .index_about h1{
+        font-size: 32px;
+    }
+    .index_about h1, .index_about p{
+        width: 450px;
+        left: 600px;
+    }
+    .main_img1{
+        width: 500px;
+    }
+
+    .main_img5,.mainvoideo_box{
+        left:550px;
+    }
+    .main_img5{
+        bottom: 341px;
+        width: 424px;
+    }
+    .mainvoideo_box{
+        width: 36vw;
+        bottom: 767px;
+    }
+    .main_about_material h1, .main_about_material p{
+        padding-left: 80px
+    }
+    .main_about_material p{
+        width: 830px;
+    }
+
+}
+@media screen and (max-width: 1120px) {
+
+    .index_about{
+        height: 270px;
+    }
+    
+    .main_img1{
+        width: 400px;
+    }
+
+    .index_about h1, .index_about p{
+        left: 500px;
+        width: 440px;
+    }
+
+    .index_about h1{
+        bottom: 310px;
+    }
+
+    .index_about p{
+        bottom: 310px;
+    }
+
+    .main_about_video h1, .main_about_video p{
+        left: 500px;
+        width: 370px;
+
+    }
+
+    .main_about_video h1{
+        bottom: 240px;
+
+    }
+
+    .main_about_video p{
+        width: 410px;
+        bottom: 250px;
+
+    }
+
+    .main_img5{
+        left: 400px;
+        bottom: 290px;
+    }
+
+    .mainvoideo_box{
+        width: 37vw;
+        left: 400px;
+        bottom: 710px;
+    }
+
+    .main_about_material h1, .main_about_material p{
+        padding-left: 70px;
+    }
+
+
+    .b_smoke_ani2{
+        left: 600px;
+        transform: scale(0.3);
+    }
+
+    
+
+    }
+
+@media screen and (max-width: 970px){
+        .main_img1{
+            padding:0px 0 0 40px ;
+        }
+
+        .index_about h1, .index_about p{
+            left: 460px;
+            width: 440px;
+        }
+
+        .index_about p{
+            width: 410px;
+            font-size: 15px;
+        }
+
+        .mainvoideo_box{
+            width: 43vw;
+        }
+
+        .main_about_video p{
+            width:395px;
+        }
+        
+        .all_nav li{
+            margin: 0;
+        }
+
+        .all_nav ul{
+            bottom: 65px;
+        }
+
+        .all_nav a{
+            padding: 0;
+        }
+
+    }
+
+@media screen and (max-width: 950px){
+    .main_img1{
+        width:370px;
+    }
+    .index_about h1, .index_about p{
+        left: 430px;
+    }
+
+    .index_about h1{
+        bottom: 290px;
+    }
+
+    .index_about p{
+        bottom: 300px;
+    }
+    .main_about_video h1, .main_about_video p{
+        left: 439px;
+        bottom: 230px;
+    }
+
+    .b_smoke_ani2{
+        display: none;
+    }
+    .main_about_material p{
+        width: 740px;
+        padding-bottom: 0;
+    }
+
+    .main_img2{
+        height: 80vh;
+    }
+
+}
+
+@media screen and (max-width: 950px){
+    
+}
