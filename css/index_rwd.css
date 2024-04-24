@@ -96,6 +96,10 @@
         width: 830px;
     }
 
+    .main_about_material{
+        height: 540px;
+    }
+
 }
 @media screen and (max-width: 1120px) {
 
@@ -233,6 +237,38 @@
 
 }
 
-@media screen and (max-width: 950px){
-    
+@media screen and (max-width: 920px){
+
+    .more:after{
+        bottom:100px
+    }
+
+    .index_about{
+        margin-top: 0px;
+    }
+    .index_about h1, .index_about p{
+        width:400px
+
+    }
+    .index_about h1{
+        font-size: 28px;
+    }
+
+    .main_about_ani_bgsmoke{
+        top: 2400px;
+    }
+
+    .main_img5{
+        width: 384px;
+    }
+
+    .mainvoideo_box{
+        bottom: 667px;
+        width: 41vw;
+    }
+
+    .img6_box{
+        height: 61vh;
+    }
+
 }

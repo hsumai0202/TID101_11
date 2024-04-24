@@ -110,6 +110,10 @@ footer{
 
 
 /* 左上角的logo */
+.nav_logo{
+    display: block;
+    width: 140px;
+}
 .all_logo{
     height: 90px;
     /* float: left; */
@@ -262,4 +266,27 @@ footer{
 }
 
 
+/* ---------------- 分頁導覽列 ------------------ */
+
+.breadcrumb{
+    font-size: 16px;
+    text-align: left;
+    padding: 5px 20px;
+    margin-bottom: 40px;
+    color: #313131;
+    position: absolute;
+    top: 140px;
+    left: 90px;
+}
+
+.breadcrumbLink{
+    color: #F05E1C;
+    text-decoration: none;
+    font-weight: 400px;
+
+}
+
+.fa-burger, .fa-house{
+    color: #F05E1C;
+}
 

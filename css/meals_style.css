@@ -692,29 +692,6 @@ hr {
 
 }
 
-/* ---------------- 分頁導覽列 ------------------ */
-
-.breadcrumb{
-    font-size: 16px;
-    text-align: left;
-    padding: 5px 20px;
-    margin-bottom: 40px;
-    color: #313131;
-    position: absolute;
-    top: 140px;
-    left: 90px;
-}
-
-.breadcrumbLink{
-    color: #F05E1C;
-    text-decoration: none;
-    font-weight: 400px;
-
-}
-
-.fa-burger, .fa-house{
-    color: #F05E1C;
-}
 
 /* ---------------- 動畫設定區域 ------------------ */
 
