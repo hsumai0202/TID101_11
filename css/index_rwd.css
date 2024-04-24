@@ -16,6 +16,10 @@
         width: 45vw;
     }
 
+    footer{
+        top: 3460px;
+    }
+
 }
 
 @media screen and (max-width: 1270px) {
@@ -60,8 +64,12 @@
         margin: 10px;
     }
 
-}
+    footer{
+        top: 3430px;
+    }
 
+
+}
 
 @media screen and (max-width: 1170px) {
     .main_about{
@@ -99,6 +107,14 @@
     .main_about_material{
         height: 540px;
     }
+    .img6_box{
+        height: 64vh;
+    }
+
+    footer{
+        top: 3230px;
+    }
+
 
 }
 @media screen and (max-width: 1120px) {
@@ -162,10 +178,13 @@
         transform: scale(0.3);
     }
 
-    
+    footer{
+        top: 3200px;
+    }
 
     }
 
+    
 @media screen and (max-width: 970px){
         .main_img1{
             padding:0px 0 0 40px ;
@@ -201,6 +220,11 @@
             padding: 0;
         }
 
+
+    footer{
+        top: 3120px;
+    }
+
     }
 
 @media screen and (max-width: 950px){
@@ -235,12 +259,17 @@
         height: 80vh;
     }
 
+
+    footer{
+        top: 3020px;
+    }
+
 }
 
 @media screen and (max-width: 920px){
 
     .more:after{
-        bottom:100px
+        bottom: 40px
     }
 
     .index_about{
@@ -263,12 +292,28 @@
     }
 
     .mainvoideo_box{
-        bottom: 667px;
+        bottom: 672px;
         width: 41vw;
     }
+    .about{
+        height: 670px;
+    }
 
+    .main_about_material{
+        height: 490px;
+    }
     .img6_box{
-        height: 61vh;
+        height: 60vh;
+    }
+
+    .swiper{
+        margin-top: 40px;
+    }
+
+    footer{
+        top: 2800px;
     }
 
 }
+
+/* 漢堡選單 */
