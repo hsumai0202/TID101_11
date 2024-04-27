@@ -21,7 +21,7 @@ video{
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    bottom: 5px;
+    bottom: 100px;
     left: 50%; 
     content: '';
     display: block;
@@ -118,7 +118,7 @@ video{
 
 
 .main_about_ani_bgsmoke{
-    outline: 2px solid firebrick;
+    /* outline: 2px solid firebrick; */
     position: absolute;
     top: 2630px;
     left: -480px;

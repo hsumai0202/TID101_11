@@ -74,7 +74,7 @@
     }
 
     .nav img{
-        margin: 0 0 0 -50px;
+        margin: 0 0 0 20px;
     }
     .main_about{
         width: 100%;
@@ -190,23 +190,33 @@
 
 @media screen and (max-width: 1110px) {
     .nav li{
-        margin-left: 30px;
+        margin-right: 30px;
+
+    }
+    .all_icon{
+        display: none;
     }
 }
 
 @media screen and (max-width: 1020px) {
     .nav li{
-        margin-left: 20px;
+        margin-left: 0px;
     }
     .index_about{
         margin-top: 0px;
     }
 }
 
-
+/* 漢堡 */
 @media screen and (max-width: 970px){
+
+        .nav img{
+            margin: 50px 0 0 0;
+
+        }
+
         .main_img1{
-            padding:0px 0 0 40px ;
+            padding:0px 0 0 20px ;
         }
 
         .nav a{
@@ -216,7 +226,9 @@
 
         #all_nav_order {
             width: 120px;
-            line-height: 40px;
+            line-height: 30px;
+            margin:30px 0;
+
         }
 
         .voideo_box{
@@ -259,142 +271,77 @@
         .ani_img{
             opacity: 1;
         }
-
-}
-
-@media screen and (max-width: 950px){
-    .main_img1{
-        width:370px;
-    }
-    .index_about h1, .index_about p{
-        left: 430px;
-    }
-
-    .index_about h1{
-        bottom: 290px;
-    }
-
-    .index_about p{
-        bottom: 300px;
-    }
-    .main_about_video h1, .main_about_video p{
-        left: 439px;
-        bottom: 230px;
-    }
-
-    .b_smoke_ani2{
-        display: none;
-    }
-    .main_about_material p{
-        width: 740px;
-        padding-bottom: 0;
-    }
-
-    .main_img2{
-        height: 80vh;
-    }
-
-    footer{
-        top: 3020px;
-    }
-
-}
-
-@media screen and (max-width: 920px){
-
-    .more:after{
-        bottom: 40px
-    }
-
-    .index_about{
-        margin-top: 0px;
-    }
-    .index_about h1, .index_about p{
-        width:400px
-
-    }
-    .index_about h1{
-        font-size: 28px;
-    }
-
-    .main_about_ani_bgsmoke{
-        top: 2400px;
-    }
-
-    .main_img5{
-        width: 384px;
-    }
-
-    .mainvoideo_box{
-        bottom: 672px;
-        width: 41vw;
-    }
-    .about{
-        height: 670px;
-    }
-
-    .main_about_material{
-        height: 490px;
-    }
-    .img6_box{
-        height: 60vh;
-    }
-
-    .swiper{
-        margin-top: 40px;
-    }
-
-    footer{
-        top: 2800px;
-    }
-
-}
-
-/* 漢堡選單 */
-
-@media screen and (max-width: 880px){
-    .nav{
-        background-color: #fff;
-		height: 60px;
-		padding: 0 20px;
-		box-sizing: border-box;
-		position: fixed;
-		left: 0;
-		top: 0;
-		width: 100%;
-    } 
-
-    .nav img{
-        height: 60px;
-        margin: 0 0 0 -410px;
-
-    }
-
-    .all_icon .fa-user, .all_icon .fa-cart-shopping{
-        top: 15px;
-    }
-
+        
     /* 漢堡打開 */
-    .nav .fa-bars{
+    .nav .burger-icon{
 		display: block;
+        margin-right: 30px;
+        line-height: 60px;
+        font-size: 35px;
+        color: #F05E1C;
 	}
 
+    .nav{
+        height: 100px;
+
+    }
     .nav ul{
 		flex-direction: column;
 		position: absolute;
-		background-color: #ffffffb0;
-		left: 0;
-		top: 60px;
-		width: 100%;
+		background-color: #fff;
+		right:  0;
+		top: 100px;
+		width:100%;
+
 		/* display: none; */
 	}
+    .all_nav{
+        flex-direction: column;
+        position: fixed;
+        right: 0;
+        top: 60px;
+        background-color: #fff;
+        width: 50vw;
+        height: calc(100hv - 60vh);
+        /* 加上轉變效果，才會是滑出 */
+        transition: 1s;
+    }
 
-    .nav li a{
-		line-height: 60px;
-	}
 
-    #all_nav_order{
-        display: none;
+    .all_nav li a{
+        width: 0px;
+        height: 0px;
+        text-decoration: none;
+        width: 110px;
+        height: 60px;
+        padding: 0;
+    }
+
+
+    .social{
+        position: fixed;
+        right: 0;
+        top: 300px;
+        flex-direction: column;
+        background-color: #fff;
+        width: 50vw;
+        transition: 1s;
+        border-top: 1px solid #ccc;
+        
+    }
+    .social li{
+        left: 30px;
+        
+    }
+
+    .social li a{
+        width: auto;
+        height: auto;
+        border: 0;
+        border-radius: 0;
+        line-height: 60px;
+        text-align: left;
+        text-decoration: none;
     }
 
 }
