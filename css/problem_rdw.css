@@ -1,0 +1,86 @@
+@media screen and (max-width: 1160px){
+    .all_icon{
+        display: none;
+    }
+
+}
+
+/* 漢堡 */
+@media screen and (max-width: 970px){
+
+    .problem_main{
+        padding-top: 120px;
+    }
+        
+        .nav .burger-icon{
+        display: block;
+        font-size: 45px;
+        color: #F05E1C;
+    }
+
+
+    #hamBar{
+        display: block;
+        text-decoration: none;
+        width: 45px;
+        height: 45px;
+        margin-right:20px;
+    }
+
+    .nav{
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 20;
+        
+    }
+
+    #menu{
+        display: block;
+        position: fixed;
+        top: 120px;
+        right: 0;
+        z-index: 99;
+        background-color: #fff;
+        width: 100%;
+        height: 90vh;
+        background-color: #F05E1C;
+        display: none;
+    }
+    .all_nav li a{
+        color: #fff;
+    }
+
+    #all_nav_order{
+        color: #F05E1C;
+        background-color: #fff;
+        width: 110px;
+    }
+    .nav li{
+        margin-right: 0;
+        margin: 10px 25px;
+        
+    }
+
+    .all_icon{
+        display: none;
+    }
+
+    .meals_main h1{
+    padding: 150px 0 0 0;
+    }
+    .footer_nav li{
+        width: 70px;
+    }
+} 
+
+
+@media screen and (max-width: 390px){
+    h3{
+        font-size: 17px;
+        font-weight: bold;
+        padding-top: 13px;
+    }
+
+
+}

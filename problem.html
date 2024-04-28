@@ -7,6 +7,7 @@
     <!-- 載入CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/problem_style.css">
+    <link rel="stylesheet" href="css/problem_rdw.css">
     <!-- 載入Js -->
     <script src="js/jquery-3.7.1.js"></script>
     <script src="js/main.js"></script>
@@ -15,7 +16,24 @@
     <script src="https://kit.fontawesome.com/277a75cd75.js" crossorigin="anonymous"></script>
     <!-- 分頁 icon -->
     <link rel="icon" type="imge/png" sizes="32x32" href="img/iocn.png" />
+    <script>
+        // $(function () {
+        //     var icon = $('.switch');
+        //     $('.content').slideToggle();
+        //     $(this).closest('.box').find('.content').slideToggle('slow', function () {
+        //         icon.text($(this).is(':hidden') ? '+' : '-');
+        //     });
+        // });
 
+        $(function () {
+            $('.content').hide();    // 將所有的 .content 隱藏起來
+            $('.switch').click(function() {
+                $(this).closest('.box').find('.content').slideToggle('slow');
+                $(this).text($(this).text() === '+' ? '-' : '+');
+                    });
+            });     
+
+    </script>
     <title>大俠漢堡堡</title>
 </head>
 
@@ -46,28 +64,52 @@
         <!-- 三大承諾內容區塊  -->
         <div class="problem_main">
             <h1>常見問題</h1>
-            <div class="problem_main_qa">
-                <h3>Q.要如何保存，保存期間多久？</h3>
-                <p>透過急速冷凍讓產品瞬間鎖鮮，所以在無化學添加物及防腐劑的情況下，可以冷凍 ( -18 ℃ ) 保存一年，保存期限印製在產品外包裝上，讓您每次取用時可清楚看到。</p>
+            <div class="box">
+                <div class="problem_main_qa clearfix">
+                    <h3>Q.要如何保存，保存期間多久？</h3>
+                    <span class="switch">-</span>
+                </div>
+                <div class="content">
+                   <p>過急速冷凍讓產品瞬間鎖鮮，所以在無化學添加物及防腐劑的情況下，可以冷凍 ( -18 ℃ ) 保存一年，保存期限印製在產品外包裝上，讓您每次取用時可清楚看到。</p> 
+                </div>
             </div>
-            <div class="problem_main_qa">
-                <h3>Q.如何烹飪？</h3>
-                <p>從冷凍狀態下取出漢堡，退冰30分鐘內，根據您的偏好使用氣炸鍋、平底鍋或烤箱來加熱。氣炸鍋建議烹飪為180度，氣炸８分鐘。平底鍋建議烹飪熱鍋後維持中火，兩面各煎約90秒。烤箱建議烹飪預熱220度，烘烤8分鐘。
-                </p>
+            <div class="box">
+                <div class="problem_main_qa clearfix">
+                    <h3>Q.如何烹飪？</h3>
+                    <span class="switch">-</span>
+                </div>
+                <div class="content">
+                    <p>從冷凍狀態下取出漢堡，退冰30分鐘內，根據您的偏好使用氣炸鍋、平底鍋或烤箱來加熱。氣炸鍋建議烹飪為180度，氣炸８分鐘。平底鍋建議烹飪熱鍋後維持中火，兩面各煎約90秒。烤箱建議烹飪預熱220度，烘烤8分鐘。</p>
+                </div>
             </div>
-            <div class="problem_main_qa">
-                <h3>Q.是否需要負擔運費？</h3>
-                <p>冷凍食品運費酌收NT$160<br>
+            <div class="box">
+                <div class="problem_main_qa clearfix">
+                    <h3>Q.是否需要負擔運費？</h3>
+                    <span class="switch">-</span>
+                </div>
+                <div class="content">
+                    <p>冷凍食品運費酌收NT$160<br>
                     商品下單後，約「5-7個工作天寄出」，不含假日及訂購當天。</p>
+                </div>
             </div>
-            <div class="problem_main_qa">
-                <h3>Q.如果我對商品有疑問怎麼辦？</h3>
-                <p>不論是對於商品的烹煮或者保存方式等等，任何商品相關問題，歡迎透過客服專線：0800-00-0080。</p>
+            <div class="box">
+                <div class="problem_main_qa clearfix">
+                    <h3>Q.如果我對商品有疑問怎麼辦？</h3>
+                    <span class="switch">-</span>
+                </div>
+                <div class="content">
+                    <p>不論是對於商品的烹煮或者保存方式等等，任何商品相關問題，歡迎透過客服專線：0800-00-0080。</p>
+                </div>
             </div>
-            <div class="problem_main_qa">
-                <h3>Q.客服資訊</h3>
-                <p>客服專線：0800-00-0080<br>
+            <div class="box">
+                <div class="problem_main_qa clearfix">
+                    <h3>Q.客服資訊</h3>
+                    <span class="switch">-</span>
+                </div>
+                <div class="content">
+                    <p>客服專線：0800-00-0080<br>
                     客服信箱：0800000080@com.tw</p>
+                </div>
             </div>
         </div>
 
