@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index_style.css">
     <link rel="stylesheet" href="css/index_rwd.css">
-    <!-- 載入Jq -->
+    <!-- 載入Js -->
     <script src="js/jquery-3.7.1.js"></script>
     <script src="js/main.js"></script>
     <!-- 載入font icon -->
@@ -17,7 +17,35 @@
     <link rel="icon" type="imge/png" sizes="32x32" href="img/iocn.png" />
     <!-- Swiper 套件 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script>
 
+         //展開或收起來 slideToggle
+
+        $(document).ready(function () {
+            $('.hamBar').click(function () {
+                $('#menu').slideToggle('all_nav')
+            })
+            $('#menu li').click(function () {
+                $('#menu').addClass('all_nav')
+            })
+        })
+
+        // $(document).ready(() => {
+        //     $('.hamBar').click(function () {
+
+        //         $('#menu').slideToggle(600);
+        //     })
+        // })
+
+
+        // $(document).ready(() => {
+        //     $('.hamBar').click(function () {
+        //         event.preventDefault();
+        //         $('#menu').slideToggle(600);
+        //
+        //     });
+        // })
+    </script>
 
     <title>大俠漢堡堡</title>
 </head>
@@ -31,10 +59,10 @@
             <a class="nav_logo" href="index.html">
                 <img class="all_logo" src="img/logo.png" alt="">
             </a>
-            <!-- 漢堡選單 -->
-            <i class="fa-solid fa-burger burger-icon "></i>
+            <!-- 漢堡選單 --><a class="hamBar" href="#">
+                <i class="fa-solid fa-burger burger-icon "></i></a>
             <!-- nav -->
-            <ul class="all_nav">
+            <ul class="all_nav" id="menu">
                 <li><a href="meals.html"><i class="fa-solid fa-burger"> 所有餐點</i></a></li>
                 <li><a href="about.html"><i class="fa-solid fa-heart"> 三大承諾</i></a></li>
                 <li><a href="news.html"><i class="fa-solid fa-bullhorn"> 最新消息</i></a></li>

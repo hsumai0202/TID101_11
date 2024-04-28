@@ -2,108 +2,49 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <title>Swiper demo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-  <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Example</title>
 
-  <!-- Demo styles -->
-  <style>
-    html,
-    body {
-      position: relative;
-      height: 100%;
-    }
-
-    body {
-      background: #eee;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color: #000;
-      margin: 0;
-      padding: 0;
-    }
-
-    .swiper {
-      width: 100%;
-      height: 100%;
-    }
-
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  </style>
 </head>
 
 <body>
-  <!-- Swiper -->
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
-      <div class="swiper-slide">Slide 5</div>
-      <div class="swiper-slide">Slide 6</div>
-      <div class="swiper-slide">Slide 7</div>
-      <div class="swiper-slide">Slide 8</div>
-      <div class="swiper-slide">Slide 9</div>
-    </div>
-    <div class="swiper-pagination"></div>
-  </div>
+    <button onclick="decrement()">-</button>
 
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <input type="text" id="quantity" value="1">
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      freeMode: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-  </script>
+    <button onclick="increment()">+</button>
 
+    <span id="priceDisplay">$200</span>
 
-<nav class="iconMenu">
-  <ul>
-      <li class="loginIcon"><a href="./login.html"><i class="fa-solid fa-user"></i></a></li>
-      <li class="phoneMenu">
-          <i class="fa-solid fa-bars"></i>
-      </li>
-  </ul>
-</nav>
+    <script>
+        var quantityInput = document.getElementById('quantity');
+        var priceDisplay = document.getElementById('priceDisplay');
+        var unitPrice = 100; // 每個商品的單位價格
 
-<div class="phoneblock">
-  <div class="menuCloseBlock">
-      <a class="menuCloseBtn "><i class="fa-solid fa-arrow-left"></i></a>
-      <p>CLOSE</p>
-  </div>
-  <ul class="phoneList">
-      <li class="phoneItem">關於我們</li>
-      <li class="phoneItem">花藝商品</li>
-      <li class="phoneItem">常見問題</li>
-      <li class="phoneItem">花藝諮詢</li>
-      <li class="phoneItem">會員登入</li>
-  </ul>
-</div>
+        function decrement() {
+            var currentValue = parseInt(quantityInput.value);
+
+            if (currentValue > 1) {
+                quantityInput.value = currentValue2 - 1;
+                updatePrice();
+            }
+        }
+
+        function increment() {
+            var currentValue2 = parseInt(quantityInput.value);
+
+            quantityInput.value = currentValue2 + 1;
+            updatePrice();
+        }
+
+        function updatePrice2() {
+            var quantity = parseInt(quantityInput.value);
+            var price = quantity * unitPrice; // 根據數量和單位價格計算總價格
+            priceDisplay.textContent = '$' + price;
+        }
+    </script>
+
 </body>
 
 </html>

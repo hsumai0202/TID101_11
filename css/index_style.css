@@ -118,7 +118,7 @@ video{
 
 
 .main_about_ani_bgsmoke{
-    /* outline: 2px solid firebrick; */
+    outline: 2px solid firebrick;
     position: absolute;
     top: 2630px;
     left: -480px;
@@ -354,6 +354,16 @@ video{
     transform: scale(1);
     opacity: 0;
     }
+}
+
+
+@keyframes easeInQuad {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100px);
+      }
 }
 
 

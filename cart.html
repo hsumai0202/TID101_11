@@ -12,7 +12,23 @@
     <script src="https://kit.fontawesome.com/277a75cd75.js" crossorigin="anonymous"></script>
     <!-- 分頁 icon -->
     <link rel="icon" type="imge/png" sizes="32x32" href="img/iocn.png" />
+    <script>
+        // 一次勾選
+        function toggleCheckbox() {
+            // 先確認有沒有勾（#toggle）
+            let toggleStatus = document.querySelector('#toggle').checked
 
+            // 找到剩下要被全勾的 type="checkbox"
+            let checkboxes = document.querySelectorAll(`input[type="checkbox"]`)
+
+            for (let i = 1; i < checkboxes.length; i++) {
+                checkboxes[i].checked = toggleStatus
+            }
+
+        }
+
+        window.onload = () => document.querySelector('#toggle').onchange = toggleCheckbox
+    </script>
     <title>大俠漢堡堡</title>
 </head>
 
@@ -22,7 +38,7 @@
         <div class="nav">
             <!-- logo -->
             <!-- 圖片設定超連接 -->
-            <a  class="nav_logo" href="index.html">
+            <a class="nav_logo" href="index.html">
                 <img class="all_logo" src="img/logo.png" alt="">
             </a>
             <!-- nav -->
@@ -47,7 +63,7 @@
         <div class="cart_main">
             <h1>購物車</h1>
             <div class="cart_main_order">
-                <input type="checkbox" name="subscribe" id="chk">
+                <input type="checkbox" name="toggle" id="toggle">
                 <p class="meals_all">全選</p>
                 <p class="meals_name">商品名稱</p>
                 <p class="meals_quantity">數量</p>
@@ -61,39 +77,45 @@
                 <div class="cart_piece">
                     <!-- 减少 -->
                     <button onclick="decrement()">-</button>
-
                     <!-- 輸入框 -->
                     <input type="text" id="quantity3" value="1">
-
                     <!-- 增加 -->
                     <button onclick="increment()">+</button>
 
+                    <span id="priceDisplay">$250</span>
                     <script>
                         // 宣告輸入框
                         var quantityInput = document.getElementById('quantity3');
+                        var priceDisplay = document.getElementById('priceDisplay');
+                        // 宣告每個商品價格
+                        var unitPrice = 250; //劍俠特製堡
+
 
                         // 減少數量
                         function decrement() {
-                            // 宣告目前的數量
                             var currentValue = parseInt(quantityInput.value);
 
-                            // 如果大於1，可以減少，-1
                             if (currentValue > 1) {
                                 quantityInput.value = currentValue - 1;
+                                updatePrice();
                             }
                         }
-
                         // 增加數量
                         function increment() {
-                            // 宣告目前的數量
                             var currentValue = parseInt(quantityInput.value);
 
-                            // 目前的數量 Ａ＋＋
                             quantityInput.value = currentValue + 1;
+                            updatePrice();
+                        }
+                        // 計算價格
+                        function updatePrice() {
+                            var quantity = parseInt(quantityInput.value);
+                            var price = quantity * unitPrice; //數量＊單價 運算式
+                            priceDisplay.textContent = '$' + price;
                         }
                     </script>
                 </div>
-                <p class="cart_price">$250</p>
+                <!-- <p class="cart_price" id="priceDisplay">$250</p> -->
                 <div class="cart_delete">刪除</div>
             </div>
             <hr class="cart_main_hr">
@@ -104,49 +126,56 @@
                 <div class="cart_piece2">
                     <!-- 减少 -->
                     <button onclick="decrement2()">-</button>
-
                     <!-- 輸入框 -->
                     <input type="text" id="quantity4" value="1">
-
                     <!-- 增加 -->
                     <button onclick="increment2()">+</button>
 
+                    <span id="priceDisplay2">$500</span>
                     <script>
                         // 宣告輸入框
                         var quantityInput2 = document.getElementById('quantity4');
+                        var priceDisplay = document.getElementById('priceDisplay2');
+                        // 宣告每個商品價格
+                        var unitPrice2 = 500; //劍俠特製堡
+
 
                         // 減少數量
                         function decrement2() {
-                            // 宣告目前的數量
                             var currentValue = parseInt(quantityInput2.value);
 
-                            // 如果大於1，可以減少，-1
                             if (currentValue > 1) {
-                                quantityInput2.value = currentValue - 1;
+                                quantityInput.value = currentValue - 1;
+                                updatePrice2();
                             }
                         }
-
                         // 增加數量
                         function increment2() {
-                            // 宣告目前的數量
-                            var currentValue = parseInt(quantityInput2.value);
+                            var currentValue2 = parseInt(quantityInput2.value);
 
-                            // 目前的數量 Ａ＋＋
-                            quantityInput2.value = currentValue + 1;
+                            quantityInput2.value = currentValue2 + 1;
+                            updatePrice2();
+                        }
+                        // 計算價格
+                        function updatePrice2() {
+                            var quantity2 = parseInt(quantityInput2.value);
+                            var price2 = quantity2 * unitPrice2; //數量＊單價 運算式
+                            priceDisplay.textContent = '$' + price2;
                         }
                     </script>
+
                 </div>
-                <p class="cart_price2">$200</p>
                 <div class="cart_delete2">刪除</div>
 
                 <div class="cart_checkout">
-                    <h3>總金額：$</h3> <h1>450</h1>
+                    <h3>總金額：$</h3>
+                    <h1>450</h1>
 
                     <input type="submit" value="結帳" id="checkout" onclick="window.location.href='checkout.html';_self">
                 </div>
                 <hr class="cart_main_hr2">
 
-        </div>
+            </div>
 
 
 
