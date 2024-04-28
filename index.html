@@ -22,7 +22,7 @@
          //展開或收起來 slideToggle
 
         $(document).ready(function () {
-            $('.hamBar').click(function () {
+            $('#hamBar').click(function () {
                 $('#menu').slideToggle('all_nav')
             })
             $('#menu li').click(function () {
@@ -59,7 +59,7 @@
             <a class="nav_logo" href="index.html">
                 <img class="all_logo" src="img/logo.png" alt="">
             </a>
-            <!-- 漢堡選單 --><a class="hamBar" href="#">
+            <!-- 漢堡選單 --><a id="hamBar" href="#">
                 <i class="fa-solid fa-burger burger-icon "></i></a>
             <!-- nav -->
             <ul class="all_nav" id="menu">
