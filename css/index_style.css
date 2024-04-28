@@ -4,7 +4,7 @@
 
 .voideo_box{
     /* outline: 10px solid gold; */
-    height: 75vh;
+    height: 53vh;
     margin: 20px;
     overflow: hidden;
 
@@ -21,7 +21,7 @@ video{
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    bottom: 100px;
+    bottom: 660px;
     left: 50%; 
     content: '';
     display: block;
@@ -94,7 +94,7 @@ video{
     left: 720px;
 }
 .main_img2{
-    height: 95vh;
+    height: 62vh;
     overflow: hidden;
 }
 
@@ -290,7 +290,7 @@ video{
 
 /* 蔬菜照 */
 .img6_box{
-    height: 75vh;
+    height: 41vh;
     margin: 20px;
     overflow: hidden;
     filter: drop-shadow(10px 50px 10px rgba(0, 0, 0, 0.242));

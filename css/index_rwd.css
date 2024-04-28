@@ -1,10 +1,18 @@
+
 @media screen and (max-width: 1330px) {
+    .voideo_box{
+        height: 50vh;
+    }
     .main_img1{
         padding: 0px 0 0 70px;
     }
 
     .index_about h1, .index_about p{
         left: 630px;
+    }
+
+    .main_img2{
+        height: 55vh;
     }
 
     .main_img5{
@@ -16,8 +24,12 @@
         width: 45vw;
     }
 
-    footer{
+    /* footer{
         top: 3500px;
+    } */
+
+    .img6_box{
+        height: 41vh;
     }
 
 }
@@ -43,6 +55,17 @@
 }
 
 @media screen and (max-width: 1230px) {
+    .voideo_box{
+        height: 46vh;
+    }
+    .more:after{
+        bottom: 700px;
+    }
+
+    .main_img2{
+        height: 50vh;
+    }
+
     .main_about{
         width: 100%;
     }
@@ -69,6 +92,11 @@
 }
 
 @media screen and (max-width: 1170px) {
+
+    .main_img2{
+        height: 45vh;
+    }
+
     .nav li{
         margin-right: 0px;
     }
@@ -112,7 +140,10 @@
         height: 540px;
     }
     .img6_box{
-        height: 64vh;
+        height: 35vh;
+    }
+    .about{
+        height: 690px;
     }
 
     footer{
@@ -122,6 +153,13 @@
 
 }
 @media screen and (max-width: 1120px) {
+
+    .more:after{
+        bottom: 750px;
+    }
+    .voideo_box{
+        height: 41vh;
+    }
 
     .index_about{
         height: 270px;
@@ -143,6 +181,10 @@
 
     .index_about p{
         bottom: 310px;
+    }
+
+    .main_img2{
+        height: 35vh;
     }
 
     .main_about_video h1, .main_about_video p{
@@ -203,6 +245,9 @@
 }
 
 @media screen and (max-width: 1040px) {
+    .more:after{
+        bottom: 800px;
+    }
     .nav li{
         margin-left: 0px;
     }
@@ -234,8 +279,11 @@
 }
 
 @media screen and (max-width: 1000px){
+    .voideo_box{
+        height: 39vh;
+    }
     .main_img2{
-        height: 85vh;
+        height: 40vh;
     }
     .index_about h1{
         font-size: 35px;
@@ -247,11 +295,6 @@
     .index_about p{
         letter-spacing: 1px;
     }
-
-    .main_img2{
-        height: 70vh;
-    }
-
     .main_about_ani_bgsmoke{
         top: 2550px;
     }
@@ -295,7 +338,7 @@
         right: 0;
         z-index: 99;
         background-color: #fff;
-        width: auto;
+        width: 100%;
         height: 90vh;
         background-color: #F05E1C;
         display: none;
@@ -318,6 +361,7 @@
 
     .voideo_box{
         margin: 140px 20px 0;
+        height: 39vh;
     }
 
     .main_img1{
@@ -342,7 +386,7 @@
     }
 
     .main_img2{
-        height: 65vh;
+        height: 40vh;
     }
 
     .b_smoke_ani{
@@ -357,13 +401,22 @@
     .main_img5, .mainvoideo_box{
         left: 460px;
     }
+    .img6_box{
+        height: 29vh;
+    }
 
 
 }
 
 @media screen and (max-width: 930px){
+    .voideo_box{
+        height: 38vh;
+    }
     .index_about h1, .index_about p{
         width: 410px;
+    }
+    .main_img2{
+        height: 35vh;
     }
 
     .main_about_video h1, .main_about_video p,.main_img5, .mainvoideo_box{
@@ -389,7 +442,7 @@
         padding-bottom: 0px;
     }
     .img6_box{
-        height: 54vh;
+        height: 29vh;
     }
     .main_about_material{
         height: 510px;
@@ -401,14 +454,10 @@
         bottom: 150px;
     }
 
-    .menu li{
-        margin-left: 42px;
-    }
 
 }
 
-
-@media screen and (max-width: 860px){
+/* @media screen and (max-width: 860px){
     .menu li{
         margin-left:32px;
     }
@@ -423,8 +472,8 @@
         left: 350px;
     }
 
-}
-@media screen and (max-width: 830px){
+} */
+@media screen and (max-width: 860px){
 
     .menu li{
         margin-left: 25px;
@@ -433,19 +482,27 @@
         display: none;
     }
     .voideo_box{
-        height: 67vh;
+        height: 33vh;
     }
 
     .index_about h1, .index_about p{
         width: 340px;
+        left: 440px;
+    }
+    .main_img1{
+        padding: 0 0 0 40px;
     }
 
     .index_about h1{
         font-size: 30px;
     }
+    
 
     .index_about p{
         font-size: 14px;
+    }
+    .main_img2{
+        height: 35vh;
     }
     .main_about_material p{
         width: 630px;
@@ -455,105 +512,196 @@
     }
     .mainvoideo_box{
         bottom: 530px;
-        width: 43vw;
+        width: 40vw;
     }
 
     .main_about_video h1, .main_about_video p{
         width: 350px;
     }
+    .about{
+        height: 600px;
+    }
 
-    .nav li{
-        margin-left: 20px;
+    .img6_box{
+        height: 28vh;
     }
 
 
 }
 
 @media screen and (max-width: 770px){
-    .menu li{
-        margin-left: 15px;
+    /*  關掉物件 */
+    .main_about_ani_bgsmoke, .main_img3, .main_img1, .main_img5, .meat_video, .main_img2 {
+        display: none;
+    }
+
+    .index_about h1{
+        font-size: 32px;
+
+    }
+    .nav li{
+        margin-left: 6px;
     }
     .index_about h1, .index_about p{
-        left: 50px;
-        bottom: 10px;
-        width: 85vw;
+        bottom: 18px;
+        width: 90vw;
+        left: 20px;
+        text-align: center;
     }
 
     .index_about{
-        height: 210px;
+        height: 150px;
+    }
+    .main_about_material h1, .main_about_material p, .main_about_video h1, .main_about_video p{
+        width: 80vw;
+        text-align: center;
     }
 
-    .index_about p{
-        font-size: 16px;
-    }
-    .index_about h1{
-        font-size: 42px;
-    }
-
-    .main_img1, .main_img2{
-        display: none;
+    .img6_box{
+        filter: drop-shadow(10px 20px 10px rgba(0, 0, 0, 0.242));
+        position: relative;
+        bottom: 140px;
     }
 
-    .ani_img{
-        transition: none;
-        animation: infinite;
+    .main_about_material h1, .main_about_material p{
+        padding-left: 60px;
+        position: relative;
+        top: 480px;
+    }
+    .main_about{
+        overflow: hidden;
     }
 
     .main_about_video{
-        width: 85vw;
-    }
+        width: 102vw;
 
-    .main_img5,.mainvoideo_box{
-        display: none;
+    }
+    .about_video{
+        padding:  0;
     }
 
     .main_about_video h1, .main_about_video p{
-        left: 70px;
-        width: 550px;
+        left: 60px;
         bottom: 30px;
     }
-
-    .about{
-        height: 530px;
-    }
-
-    .main_img2{
-        height: 35vh;
-    }
-
-    .main_about_material p{
-        width: 570px;
+    .main_about_video p{
+        font-size: 24px;
+        line-height: 35px;
     }
 
     .main_about_material{
-        height: 440px;
+        height: 640px;
     }
-    /*  關掉煙霧 */
-    .main_about_ani_bgsmoke{
-        display: none;
+    .voideo_box{
+        height: 30vh;
     }
+
 
 
 }
 
 @media screen and (max-width: 760px){
-    .nav li{
-        margin-left: 18px;
+    .voideo_box{
+        height: 25vh;
     }
+    .index_about h1, .index_about p{
+        bottom: 5px;
+        width: 90vw;
+        left: 20px;
+        text-align: center;
+    }
+    .main_about_material h1, .main_about_material p, .main_about_video h1, .main_about_video p{
+        width: 80vw;
+        text-align: center;
+    }
+
+    .img6_box{
+        filter: drop-shadow(10px 20px 10px rgba(0, 0, 0, 0.242));
+        position: relative;
+        bottom: 180px;
+    }
+
+
+    .main_about_material h1, .main_about_material p{
+        padding-left: 60px;
+        position: relative;
+        top: 420px;
+    }
+
+    .main_about_material{
+        height: 600px;
+    }
+
 
 }
 
-@media screen and (max-width: 750px){
-    .nav li{
-        margin-left: 19px;
+/* @media screen and (max-width: 750px){
+    .voideo_box{
+        height: 25vh;
     }
-}
+    .index_about h1, .index_about p{
+        bottom: 5px;
+        width: 90vw;
+        left: 20px;
+        text-align: center;
+    }
+    .main_about_material h1, .main_about_material p, .main_about_video h1, .main_about_video p{
+        width: 80vw;
+        text-align: center;
+    }
 
-@media screen and (max-width: 700px){
-    .nav li{
-        margin-left: 12px;
+    .img6_box{
+        filter: drop-shadow(10px 20px 10px rgba(0, 0, 0, 0.242));
+        position: relative;
+        bottom: 180px;
     }
-}
+
+
+    .main_about_material h1, .main_about_material p{
+        padding-left: 60px;
+        position: relative;
+        top: 420px;
+    }
+
+    .main_about_material{
+        height: 600px;
+    }
+
+} */
+
+/* @media screen and (max-width: 700px){
+    .voideo_box{
+        height: 25vh;
+    }
+    .index_about h1, .index_about p{
+        bottom: 5px;
+        width: 90vw;
+        left: 20px;
+        text-align: center;
+    }
+    .main_about_material h1, .main_about_material p, .main_about_video h1, .main_about_video p{
+        width: 80vw;
+        text-align: center;
+    }
+
+    .img6_box{
+        filter: drop-shadow(10px 20px 10px rgba(0, 0, 0, 0.242));
+        position: relative;
+        bottom: 180px;
+    }
+
+
+    .main_about_material h1, .main_about_material p{
+        padding-left: 60px;
+        position: relative;
+        top: 420px;
+    }
+
+    .main_about_material{
+        height: 600px;
+    }
+
+} */
 
 @media screen and (max-width: 670px){
     .index_about h1{
@@ -564,7 +712,7 @@
         margin-left: 6px;
     }
     .index_about h1, .index_about p{
-        bottom: 97px;
+        bottom: 68px;
         width: 90vw;
         left: 20px;
         text-align: center;
@@ -580,13 +728,13 @@
     .img6_box{
         filter: drop-shadow(10px 20px 10px rgba(0, 0, 0, 0.242));
         position: relative;
-        bottom: 300px;
+        bottom: 140px;
     }
 
     .main_about_material h1, .main_about_material p{
-        padding-left: 50px;
+        padding-left: 60px;
         position: relative;
-        top: 200px;
+        top: 430px;
     }
     .main_about{
         overflow: hidden;
@@ -601,7 +749,14 @@
     }
 
     .main_about_video h1, .main_about_video p{
-        left: 50px;
+        left: 60px;
+    }
+
+    .main_about_material{
+        height: 640px;
+    }
+    .voideo_box{
+        height: 30vh;
     }
 
 }
@@ -611,15 +766,16 @@
         margin-right: 20px;
     }
     .voideo_box{
-        height: 35vh;
+        height: 15vh;
         margin: 120px 0 0;
     }
 
     .index_about h1, .index_about p{
-        bottom: -15px;
+        bottom: -7px;
         width: 90vw;
         text-align: left;
         left: 20px;
+        text-align: center;
 
     }
     .index_about h1{
@@ -632,7 +788,7 @@
         font-weight:600px;
     }
     .index_about{
-        height: 250px;
+        height: 220px;
     }
     .about{
         height: 440px;
@@ -653,6 +809,7 @@
 
     .main_about_material h1, .main_about_material p{
         top: 240px;
+        padding-left: 40px
         
     }
 
@@ -664,13 +821,23 @@
         width: 70px;
     }
 
+    .main_about_material{
+        height: 480px;
+    }
+
+    .img6_box{
+        height: 44vh;
+    }
+
 }
 
 @media screen and (max-width: 390px){
     .img6_box{
-        bottom: 40px;
+        bottom: 55px;
     }
-
+    .voideo_box{
+        height: 30vh;
+    }
 
     .about{
         height:240px;
@@ -680,10 +847,14 @@
         height: 640px;
     }
 
-
     .main_about_material h1, .main_about_material p{
         top: 400px;
         padding-left: 40px;
         
+    }
+
+    .main_about_video p{
+        font-size: 16px;
+        line-height: 25px;
     }
 }
