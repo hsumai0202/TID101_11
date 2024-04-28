@@ -12,16 +12,13 @@
 }
 
 h1{
-    /* outline: 2px solid darkblue; */
-    width: 530px;
+    text-align: center;
     font-size: 42px;
     color: #313131;
     font-family: "Noto Sans TC", sans-serif;
     font-weight: 400;
     letter-spacing: 5px;
-    padding-top: 20px;
-    padding-left: 120px;
-    margin-bottom: 20px;
+    padding: 30px 0;
 
 }
 
@@ -85,7 +82,7 @@ p{
 .address{
 	width: 489px;
 	height: 30px;
-    background-color: #;
+    background-color: #fff;
 	border: 1px solid #d8d8d8;
     border-radius: 4px;
 	padding:10px;
@@ -120,4 +117,6 @@ textarea{
     bottom: 40px;
     left: 355px;
 }
-
+.send:hover{
+    background: #FFA800;
+}

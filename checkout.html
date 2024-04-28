@@ -7,6 +7,10 @@
     <!-- 載入CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/cart_style.css">
+    <!-- 載入Js -->
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/hamBar.js"></script>
     <!-- 載入font icon -->
     <script src="https://kit.fontawesome.com/277a75cd75.js" crossorigin="anonymous"></script>
     <!-- 分頁 icon -->
@@ -22,26 +26,23 @@
         <div class="nav">
             <!-- logo -->
             <!-- 圖片設定超連接 -->
-            <a  class="nav_logo" href="index.html">
+            <a class="nav_logo" href="index.html">
                 <img class="all_logo" src="img/logo.png" alt="">
             </a>
+            <!-- 漢堡選單 --><a id="hamBar" href="#">
+                <i class="fa-solid fa-burger burger-icon "></i></a>
             <!-- nav -->
-            <div class="all_nav">
-                <ul>
-                    <li><a href="meals.html"><i class="fa-solid fa-burger"> 所有餐點</i></a></li>
-                    <li><a href="about.html"><i class="fa-solid fa-heart"> 三大承諾</i></a></li>
-                    <li><a href="news.html"><i class="fa-solid fa-bullhorn"> 最新消息</i></a></li>
-                    <li><a href="problem.html"><i class="fa-solid fa-comment-dots"> 常見問題</i></a></li>
-                    <li><a id="all_nav_order" href="order.html"><i class="fa-solid fa-file-lines"> 訂單查詢</i></a></li>
-                </ul>
-            </div>
-            <!-- nav icon -->
-            <div class="all_icon">
-                <ul>
-                    <li><a href=""><i class="fa-solid fa-user"></i></a></li>
-                    <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                </ul>
-            </div>
+            <ul class="all_nav" id="menu">
+                <li><a href="meals.html"><i class="fa-solid fa-burger"> 所有餐點</i></a></li>
+                <li><a href="about.html"><i class="fa-solid fa-heart"> 三大承諾</i></a></li>
+                <li><a href="news.html"><i class="fa-solid fa-bullhorn"> 最新消息</i></a></li>
+                <li><a href="problem.html"><i class="fa-solid fa-comment-dots"> 常見問題</i></a></li>
+                <li><a id="all_nav_order" href="order.html"><i class="fa-solid fa-file-lines"> 訂單查詢</i></a></li>
+            </ul>
+            <ul class="all_icon">
+                <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
         </div>
         <!-- 內容區塊  -->
         <div class="checkout_main">
