@@ -85,15 +85,15 @@
                     <span id="priceDisplay">$250</span>
                     <script>
                         // 宣告輸入框
-                        var quantityInput = document.getElementById('quantity3');
-                        var priceDisplay = document.getElementById('priceDisplay');
+                        let quantityInput = document.getElementById('quantity3');
+                        let priceDisplay = document.getElementById('priceDisplay');
                         // 宣告每個商品價格
-                        var unitPrice = 250; //劍俠特製堡
+                        let unitPrice = 250; //劍俠特製堡
 
 
                         // 減少數量
                         function decrement() {
-                            var currentValue = parseInt(quantityInput.value);
+                            let currentValue = parseInt(quantityInput.value);
 
                             if (currentValue > 1) {
                                 quantityInput.value = currentValue - 1;
@@ -102,15 +102,15 @@
                         }
                         // 增加數量
                         function increment() {
-                            var currentValue = parseInt(quantityInput.value);
+                            let currentValue = parseInt(quantityInput.value);
 
                             quantityInput.value = currentValue + 1;
                             updatePrice();
                         }
                         // 計算價格
                         function updatePrice() {
-                            var quantity = parseInt(quantityInput.value);
-                            var price = quantity * unitPrice; //數量＊單價 運算式
+                            let quantity = parseInt(quantityInput.value);
+                            let price = quantity * unitPrice; //數量＊單價 運算式
                             priceDisplay.textContent = '$' + price;
                         }
                     </script>
@@ -131,18 +131,18 @@
                     <!-- 增加 -->
                     <button onclick="increment2()">+</button>
 
-                    <span id="priceDisplay2">$500</span>
+                    <span id="priceDisplay2">$200</span>
                     <script>
                         // 宣告輸入框
-                        var quantityInput2 = document.getElementById('quantity4');
-                        var priceDisplay = document.getElementById('priceDisplay2');
+                        let quantityInput2 = document.getElementById('quantity4');
+                        let priceDisplayㄉ = document.getElementById('priceDisplay2');
                         // 宣告每個商品價格
-                        var unitPrice2 = 500; //劍俠特製堡
+                        let unitPrice2 = 200; //劍俠特製堡
 
 
                         // 減少數量
                         function decrement2() {
-                            var currentValue = parseInt(quantityInput2.value);
+                            let currentValue = parseInt(quantityInput2.value);
 
                             if (currentValue > 1) {
                                 quantityInput.value = currentValue - 1;
@@ -151,16 +151,16 @@
                         }
                         // 增加數量
                         function increment2() {
-                            var currentValue2 = parseInt(quantityInput2.value);
+                            let currentValue2 = parseInt(quantityInput2.value);
 
                             quantityInput2.value = currentValue2 + 1;
                             updatePrice2();
                         }
                         // 計算價格
                         function updatePrice2() {
-                            var quantity2 = parseInt(quantityInput2.value);
-                            var price2 = quantity2 * unitPrice2; //數量＊單價 運算式
-                            priceDisplay.textContent = '$' + price2;
+                            let quantity2 = parseInt(quantityInput2.value);
+                            let price2 = quantity2 * unitPrice2; //數量＊單價 運算式
+                            priceDisplay2.textContent = '$' + price2;
                         }
                     </script>
 

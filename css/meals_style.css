@@ -37,81 +37,65 @@
 
 
 /* ---------------- 所有餐點內容區塊 ------------------ */
-
 .meals_main{
-    width: 1300px;
+    width: 100%;
+    padding-bottom: 90px;
 }
 
 .meals_main_1{
-    /* outline:  2px solid seagreen; */
     width: 95%;
-    margin: 0 auto;
-    padding: 20px;
     position: relative;
-    left: 100px;
-    top: 50px;
+    margin: 0 auto;
 }
 
 .meals_main_1 ul{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: row; 
+    justify-content: center; 
 }
 
 .meals_main_1 li{
-    padding: 10px;
-    margin: 0 5px 10px;
+    margin: 20px;
     box-sizing: border-box;
-    flex-basis: 300px;
-    flex-grow: 1;
+
+
 }
 
-
 .meals_main_1 img{
-    width: 250px;
+    width: 100%;
     display: block;
     padding-bottom: 10px;
 }
 
 .meals_main h1{
     text-align: center;
-    width: 530px;
     font-size: 42px;
     color: #313131;
     font-family: "Noto Sans TC", sans-serif;
     font-weight: 400;
     letter-spacing: 5px;
-    position: absolute;
-    left: 420px;
-    padding-top: 20px;
-
+    padding: 30px 0;
 }
 
-.meals_main .h2{
-    /* outline:  2px solid seagreen; */
+.meals_main a{
     text-decoration: none;
-    width: 200px;
     font-size: 22px;
     color: #313131;
     font-family: "Noto Sans TC", sans-serif;
     font-weight: 400;
-    position: relative;
-    top: 10px;
-    
-
+    display: block;
+    height: 50px;
 }
 
-.meals_main h3{
-    /* outline:  2px solid seagreen; */
-    width: 80px;
+.price{
     font-size: 32px;
     color: #F05E1C;
     font-family: "Noto Sans TC", sans-serif;
     font-weight: 400;
-    position: relative;
-    top: -20px;
-    left: 180px;
+    padding-left:  45px;
 }
+
 
 #shopp {
     display: block;
@@ -126,18 +110,14 @@
     position: relative;
     font-size: 20px;
     font-weight: bold;
-    /* 去除自帶的陰影 */
-    border:none;
-    /* 滑鼠游標 */
-    cursor:pointer;
+    border: none;
+    cursor: pointer;
 }
 
 #shopp:hover {
-    
     background: #FFA800;
     color: #fff;
 }
-
 
 #divchpic01{
     position: relative;
@@ -150,16 +130,6 @@
     cursor:pointer;
 }
 
-#divchpic01:hover {
-    display: block;
-    background-image: url(../img/商品圖/暗夜神秘堡.png);
-    
-    transition: .5s;
-    transform:scale(1.2,1.2);
-    cursor:pointer;
-}
-
-
 #divchpic02{
     position: relative;
     width: 250px;
@@ -170,16 +140,6 @@
     padding-bottom: 15px;
     cursor:pointer;
 }
-
-#divchpic02:hover {
-    display: block;
-    background-image: url(../img/商品圖/大滿貫.png);
-    
-    transition: .5s;
-    transform:scale(1.2,1.2);
-    cursor:pointer;
-}
-
 
 #divchpic03{
     position: relative;
@@ -192,16 +152,6 @@
     cursor:pointer;
 }
 
-#divchpic03:hover {
-    display: block;
-    background-image: url(../img/商品圖/起司豬肉.png);
-    
-    transition: .5s;
-    transform:scale(1.2,1.2);
-    cursor:pointer;
-}
-
-
 #divchpic04{
     position: relative;
     width: 250px;
@@ -210,15 +160,6 @@
     background-repeat: no-repeat;
     background-size: 250px;
     padding-bottom: 15px;
-    cursor:pointer;
-}
-
-#divchpic04:hover {
-    display: block;
-    background-image: url(../img/商品圖/酪梨起司.png);
-    
-    transition: .5s;
-    transform:scale(1.2,1.2);
     cursor:pointer;
 }
 
@@ -233,16 +174,6 @@
     cursor:pointer;
 }
 
-#divchpic05:hover {
-    display: block;
-    background-image: url(../img/商品圖/鳳梨豬.png);
-    
-    transition: .5s;
-    transform:scale(1.2,1.2);
-    cursor:pointer;
-}
-
-
 #divchpic06{
     position: relative;
     width: 250px;
@@ -254,6 +185,85 @@
     cursor:pointer;
 }
 
+
+#divchpic07{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-image: url(../img/商品圖/五行拳堡2.png);
+    background-repeat: no-repeat;
+    background-size: 250px;
+    padding-bottom: 15px;
+    cursor:pointer;
+}
+
+
+#divchpic08{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-image: url(../img/商品圖/五行六合堡2.png);
+    background-repeat: no-repeat;
+    background-size: 250px;
+    padding-bottom: 15px;
+    cursor:pointer;
+}
+
+#divchpic01, #divchpic02, #divchpic03, #divchpic04, #divchpic05, #divchpic06, #divchpic07, #divchpic08{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: 250px;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+
+#divchpic01:hover {
+    display: block;
+    background-image: url(../img/商品圖/暗夜神秘堡.png);
+    
+    transition: .5s;
+    transform:scale(1.2,1.2);
+    cursor:pointer;
+}
+
+#divchpic02:hover {
+    display: block;
+    background-image: url(../img/商品圖/大滿貫.png);
+    
+    transition: .5s;
+    transform:scale(1.2,1.2);
+    cursor:pointer;
+}
+
+#divchpic03:hover {
+    display: block;
+    background-image: url(../img/商品圖/起司豬肉.png);
+    
+    transition: .5s;
+    transform:scale(1.2,1.2);
+    cursor:pointer;
+}
+
+#divchpic04:hover {
+    display: block;
+    background-image: url(../img/商品圖/酪梨起司.png);
+    
+    transition: .5s;
+    transform:scale(1.2,1.2);
+    cursor:pointer;
+}
+
+#divchpic05:hover {
+    display: block;
+    background-image: url(../img/商品圖/鳳梨豬.png);
+    
+    transition: .5s;
+    transform:scale(1.2,1.2);
+    cursor:pointer;
+}
+
 #divchpic06:hover {
     display: block;
     background-image: url(../img/商品圖/經典美式.png);
@@ -262,8 +272,22 @@
     transform:scale(1.2,1.2);
     cursor:pointer;
 }
-
-
+#divchpic07:hover {
+    display: block;
+    background-image: url(../img/商品圖/五行拳堡.png);
+    
+    transition: .5s;
+    transform:scale(1.2,1.2);
+    cursor:pointer;
+}
+#divchpic08:hover {
+    display: block;
+    background-image: url(../img/商品圖/五行六合堡.png);
+    
+    transition: .5s;
+    transform:scale(1.2,1.2);
+    cursor:pointer;
+}
 
 /* ---------------- 商品詳細頁 ------------------ */
 

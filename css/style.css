@@ -117,6 +117,7 @@ header{
     display: flex;
 	justify-content: center;
 	flex-basis: 350px;
+    z-index: 40;
 }
 
 .all_icon li{

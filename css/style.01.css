@@ -634,3 +634,33 @@ input[type="radio"]{
     width: 300px;
     height: 300px;
 }
+
+.meal_image {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+}
+
+.meal_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.meals_main_1 li {
+    position: relative;
+}
+
+.meals_main_1 .price {
+    font-size: 22px;
+    color: #F05E1C;
+    font-weight: 400;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.shopp {
+    /* 按鈕的樣式 */
+}

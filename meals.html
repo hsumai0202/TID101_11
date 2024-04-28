@@ -7,6 +7,11 @@
     <!-- 載入CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/meals_style.css">
+    <link rel="stylesheet" href="css/meals_rwd.css">
+    <!-- 載入Js -->
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/hamBar.js"></script>
     <!-- 載入font icon -->
     <script src="https://kit.fontawesome.com/277a75cd75.js" crossorigin="anonymous"></script>
     <!-- 分頁 icon -->
@@ -21,26 +26,24 @@
         <div class="nav">
             <!-- logo -->
             <!-- 圖片設定超連接 -->
-            <a  class="nav_logo" href="index.html">
+            <a class="nav_logo" href="index.html">
                 <img class="all_logo" src="img/logo.png" alt="">
             </a>
+            <!-- 漢堡選單 --><a id="hamBar" href="#">
+                <i class="fa-solid fa-burger burger-icon "></i></a>
             <!-- nav -->
-            <div class="all_nav">
-                <ul>
-                    <li><a href="meals.html"><i class="fa-solid fa-burger"> 所有餐點</i></a></li>
-                    <li><a href="about.html"><i class="fa-solid fa-heart"> 三大承諾</i></a></li>
-                    <li><a href="news.html"><i class="fa-solid fa-bullhorn"> 最新消息</i></a></li>
-                    <li><a href="problem.html"><i class="fa-solid fa-comment-dots"> 常見問題</i></a></li>
-                    <li><a id="all_nav_order" href="order.html"><i class="fa-solid fa-file-lines"> 訂單查詢</i></a></li>
-                </ul>
-            </div>
-            <!-- nav icon -->
-            <div class="all_icon">
-                <ul>
-                    <li><a href=""><i class="fa-solid fa-user"></i></a></li>
-                    <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                </ul>
-            </div>
+            <ul class="all_nav" id="menu">
+                <li><a href="meals.html"><i class="fa-solid fa-burger"> 所有餐點</i></a></li>
+                <li><a href="about.html"><i class="fa-solid fa-heart"> 三大承諾</i></a></li>
+                <li><a href="news.html"><i class="fa-solid fa-bullhorn"> 最新消息</i></a></li>
+                <li><a href="problem.html"><i class="fa-solid fa-comment-dots"> 常見問題</i></a></li>
+                <li><a id="all_nav_order" href="order.html"><i class="fa-solid fa-file-lines"> 訂單查詢</i></a></li>
+            </ul>
+            <ul class="all_icon">
+                <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+            <script></script>
         </div>
         <!-- 所有餐點區塊  -->
         <div class="meals_main">
@@ -53,8 +56,7 @@
                         <div id="divchpic01" onclick="window.location.href='meals_burger1.html';_self">
                             <a href="meals_burger1.html" title=""></a>
                         </div>
-                        <a class="h2" href="meals_burger1.html">劍俠特製堡</a>
-                        <h3>$250</h3>
+                        <a class="h2" href="meals_burger1.html">劍俠特製堡 <span class="price">$250</span></a>
                         <button id="shopp" type="button"
                             onclick="window.location.href='meals_burger1.html';_self">加入購物車</button>
 
@@ -64,18 +66,16 @@
                         <div id="divchpic02" onclick="window.location.href='meals_burger1.html';_self">
                             <a href="meals_burger1.html" title=""></a>
                         </div>
-                        <a class="h2" href="meals_burger1.html">岳飛獅子吼堡</a>
-                        <h3>$200</h3>
+                       <div class="bottom"> <a class="h2" href="meals_burger1.html">岳飛獅子吼堡<span class="price">$200</span></a></div>
                         <button id="shopp" type="button"
-                        onclick="window.location.href='meals_burger1.html';_self">加入購物車</button>
+                            onclick="window.location.href='meals_burger1.html';_self">加入購物車</button>
 
                     </li>
                     <li>
                         <div id="divchpic03" onclick="window.location.href='meals_burger1.html';_self">
                             <a href="meals_burger1.html" title=""></a>
                         </div>
-                        <a class="h2" href="meals_burger1.html">太極掌漢堡</a>
-                        <h3>$160</h3>
+                        <a class="h2" href="meals_burger1.html">太極掌漢堡<span class="price">$160</span></a>
                         <button id="shopp" type="button"
                             onclick="window.location.href='meals_burger1.html';_self">加入購物車</button>
 
@@ -84,8 +84,7 @@
                         <div id="divchpic04" onclick="window.location.href='meals_burger1.html';_self">
                             <a href="meals_burger1.html" title=""></a>
                         </div>
-                        <a class="h2" href="meals_burger1.html">葵花寶典堡</a>
-                        <h3>$200</h3>
+                        <a class="h2" href="meals_burger1.html">葵花寶典堡<span class="price">$200</span></a>
                         <button id="shopp" type="button"
                             onclick="window.location.href='meals_burger1.html';_self">加入購物車</button>
                     </li>
@@ -93,8 +92,7 @@
                         <div id="divchpic05" onclick="window.location.href='meals_burger1.html';_self">
                             <a href="meals_burger1.html" title=""></a>
                         </div>
-                        <a class="h2" href="meals_burger1.html">鳳凰展翅堡</a>
-                        <h3>$160</h3>
+                        <a class="h2" href="meals_burger1.html">鳳凰展翅堡<span class="price">$160</span></a>
                         <button id="shopp" type="button"
                             onclick="window.location.href='meals_burger1.html';_self">加入購物車</button>
 
@@ -103,8 +101,25 @@
                         <div id="divchpic06" onclick="window.location.href='meals_burger1.html';_self">
                             <a href="meals_burger1.html" title=""></a>
                         </div>
-                        <a class="h2" href="meals_burger1.html">忠義勇者堡</a>
-                        <h3>$150</h3>
+                        <a class="h2" href="meals_burger1.html">忠義勇者堡<span class="price">$150</span></a>
+                        <button id="shopp" type="button"
+                            onclick="window.location.href='meals_burger1.html';_self">加入購物車</button>
+
+                    </li>
+                    <li>
+                        <div id="divchpic07" onclick="window.location.href='meals_burger1.html';_self">
+                            <a href="meals_burger1.html" title=""></a>
+                        </div>
+                        <a class="h2" href="meals_burger1.html">五行拳堡<span class="price">$260</span></a>
+                        <button id="shopp" type="button"
+                            onclick="window.location.href='meals_burger1.html';_self">加入購物車</button>
+
+                    </li>
+                    <li>
+                        <div id="divchpic08" onclick="window.location.href='meals_burger1.html';_self">
+                            <a href="meals_burger1.html" title=""></a>
+                        </div>
+                        <a class="h2" href="meals_burger1.html">五行六合堡<span class="price">$150</span></a>
                         <button id="shopp" type="button"
                             onclick="window.location.href='meals_burger1.html';_self">加入購物車</button>
 
