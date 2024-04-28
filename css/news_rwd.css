@@ -1,0 +1,169 @@
+@media screen and (max-width: 1130px){
+    .all_icon{
+        display: none;
+    }
+
+    .news_main_font{
+        width: 700px;
+    }
+
+}
+@media screen and (max-width: 1004px){
+    .news_main_font{
+        width: 650px;
+    }
+    .news_main_1{
+        width: 90%;
+    }
+}
+
+/* 漢堡 */
+@media screen and (max-width: 980px){
+
+    .news h1{
+        padding-top: 150px;
+    }
+    .news_main_font{
+        width: 70%;
+    }
+
+    .problem_main{
+        padding-top: 120px;
+    }
+        
+        .nav .burger-icon{
+        display: block;
+        font-size: 45px;
+        color: #F05E1C;
+    }
+
+
+    #hamBar{
+        display: block;
+        text-decoration: none;
+        width: 45px;
+        height: 45px;
+        margin-right:20px;
+    }
+
+    .nav{
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 20;
+        
+    }
+
+    #menu{
+        display: block;
+        position: fixed;
+        top: 120px;
+        right: 0;
+        z-index: 99;
+        background-color: #fff;
+        width: 100%;
+        height: 90vh;
+        background-color: #F05E1C;
+        display: none;
+    }
+    .all_nav li a{
+        color: #fff;
+    }
+
+    #all_nav_order{
+        color: #F05E1C;
+        background-color: #fff;
+        width: 110px;
+    }
+    .nav li{
+        margin-right: 0;
+        margin: 10px 25px;
+        
+    }
+
+    .all_icon{
+        display: none;
+    }
+
+    .meals_main h1{
+    padding: 150px 0 0 0;
+    }
+    .footer_nav li{
+        width: 70px;
+    }
+} 
+
+
+@media screen and (max-width: 700px){
+
+    .about_img2, .about_img4, .about_img6{
+        display: none;
+    }
+    .about_main_font{
+        bottom: -50px;
+        left: 60px;
+    }
+    .about_main_font h2, .about_main_font p, .about_main_font{
+        width: 500px
+    }
+
+    .about_main_1{
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 610px){
+
+    .about_main_font{
+        bottom: -50px;
+        left: 60px;
+    }
+    .about_main_font h2, .about_main_font p, .about_main_font{
+        width: 90%;
+    }
+
+    .about_main_1{
+        height: 460px;
+    }
+
+    .about_img1, .about_img3, .about_img5{
+        width: 75vw;
+    }
+}
+
+@media screen and (max-width: 610px){
+
+    .about_main_1{
+        height: 465px;
+    }
+    .about_img1, .about_img3, .about_img5,.about_main_font{
+        left: 35px;
+    }
+    
+    .about_main_font p{
+        line-height: 21px;
+        letter-spacing: 1.5px
+    }
+    .about_main_1{
+        height: 410px;
+    }
+
+}
+
+@media screen and (max-width: 430px){
+    .about_main_font h2{
+        font-size: 20px;    
+    }
+    .about_main_1{
+        margin-bottom: 25px;
+    }
+    .about_main_font h2, .about_main_font p{
+        width: 95%;
+    }
+
+    .about_img1, .about_img3, .about_img5,.about_main_font{
+        left: 30px;
+    }
+
+
+}
