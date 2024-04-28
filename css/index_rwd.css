@@ -277,6 +277,7 @@
         text-decoration: none;
         width: 45px;
         height: 45px;
+        margin-right:20px;
     }
 
     .nav{
@@ -555,12 +556,17 @@
 }
 
 @media screen and (max-width: 670px){
+    .index_about h1{
+        font-size: 30px;
+
+    }
     .nav li{
         margin-left: 6px;
     }
     .index_about h1, .index_about p{
-        bottom: 77px;
-        width: 80vw;
+        bottom: 97px;
+        width: 90vw;
+        left: 20px;
         text-align: center;
     }
     .index_about{
@@ -573,8 +579,30 @@
 
     .img6_box{
         filter: drop-shadow(10px 20px 10px rgba(0, 0, 0, 0.242));
+        position: relative;
+        bottom: 300px;
     }
-    
+
+    .main_about_material h1, .main_about_material p{
+        padding-left: 50px;
+        position: relative;
+        top: 200px;
+    }
+    .main_about{
+        overflow: hidden;
+    }
+
+    .main_about_video{
+        width: 102vw;
+
+    }
+    .about_video{
+        padding:  0;
+    }
+
+    .main_about_video h1, .main_about_video p{
+        left: 50px;
+    }
 
 }
 
@@ -588,7 +616,7 @@
     }
 
     .index_about h1, .index_about p{
-        bottom: 15px;
+        bottom: -15px;
         width: 90vw;
         text-align: left;
         left: 20px;
@@ -597,6 +625,7 @@
     .index_about h1{
         font-size: 30px;
         font-weight: bolder;
+        margin-bottom: 10px;
     }
     .index_about p{
         font: 12px;
@@ -614,40 +643,47 @@
     .main_about_video{
         width: 100vw;
         position: absolute;
-        right: 50px;
+        right: 0;
     }
     .main_about_video h1, .main_about_video p{
         width: 90vw;
+        left: 20px;
+
     }
 
     .main_about_material h1, .main_about_material p{
-        width: 95vw;
+        top: 240px;
         
     }
-    .main_about_material p{
-        position: absolute;
-        right: 5px;
-        bottom: -920px;
-    }
 
-    .main_about_material h1{
-        position: absolute;
-        right: 15px;
-        bottom: -800px;
-
-    }
-    .main_img6{
-        width: 100%;
-        position: absolute;
-        top: 1000px;
-        left: 0px;
-        
-    }
     .img6_box{
         overflow: visible;
+        bottom: 220px;
     }
     .footer_nav li{
         width: 70px;
     }
 
+}
+
+@media screen and (max-width: 390px){
+    .img6_box{
+        bottom: 40px;
+    }
+
+
+    .about{
+        height:240px;
+
+    }
+    .main_about_material{
+        height: 640px;
+    }
+
+
+    .main_about_material h1, .main_about_material p{
+        top: 400px;
+        padding-left: 40px;
+        
+    }
 }
