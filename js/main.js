@@ -76,3 +76,5 @@ window.onresize = function () {
     addClassToVisibleElements();
 }
 
+
+
